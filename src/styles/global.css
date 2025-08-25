@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+    --color-light: #FDF8F0;
+    --color-primary: #C3743A;
+    --color-secondary: #B56F35;
+    --color-tertiary: #F2D8BF;
+    --color-dark: #6B3F2A;
+    --color-content-text: #834C30;
+    --color-ico: #F9EDE0;
+}
+
+
+.chapter-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 20px;
+}

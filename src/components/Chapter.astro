@@ -1,0 +1,21 @@
+---
+
+import Ico from './Ico.astro'
+import Text from './Text.astro'
+
+interface Props {
+  index: number
+  title: string
+  description: string
+}
+
+const { index, title, description } = Astro.props
+---
+
+
+<div class="chapter-item">
+  <Ico>{index}</Ico>
+  <strong class="font-medium">{title}</strong>
+  <div/>
+  <Text>{description}</Text>
+</div>

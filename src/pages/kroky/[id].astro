@@ -1,0 +1,32 @@
+---
+import { getCollection, render } from 'astro:content'
+import Layout from '../../layouts/Layout.astro'
+import Content from '../../components/Content.astro'
+import H1 from '../../components/H1.astro'
+
+export async function getStaticPaths() {
+  const steps = await getCollection('steps')
+
+  return steps.map((step) => ({
+    params: { id: step.data.slug },
+    props: { step },
+  }))
+}
+
+const { step } = Astro.props
+const { Content: RenderedContent } = await render(step)
+---
+
+<Layout>
+  <main>
+    <Content bg="light">
+      <nav class="mb-4">
+        <a href="/" class="text-secondary">Zpět na hlavní stránku</a>
+      </nav>
+      <H1 class='text-3xl'>{step.data.title}</H1>
+      <div class='md-content pb-16'>
+        <RenderedContent />
+      </div>
+    </Content>
+  </main>
+</Layout>
