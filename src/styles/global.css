@@ -11,6 +11,18 @@
 }
 
 
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    min-height: 100vh;
+}
+
+.head-bg {
+    background: #FDF8F0;
+    background: linear-gradient(180deg,rgba(253, 248, 240, 1) 0%, rgba(254, 252, 248, 1) 48%, rgba(253, 248, 240, 1) 100%);
+}
+
 .chapter-item {
     display: grid;
     grid-template-columns: auto 1fr;

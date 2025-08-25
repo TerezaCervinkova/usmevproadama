@@ -1,21 +1,25 @@
 ---
 import { cn } from '../utils/cn'
+
+type BgType = "white" | "light" | "dark" | "transparent"
+
 interface Props {
-  bg: "white" | "light" | "dark"
+  bg: BgType
 }
 
 const { bg: bgValue } = Astro.props
 
-const bgMap: Record< "white" | "light" | "dark", string> = {
+const bgMap: Record<BgType, string> = {
   white: "white",
   light: "bg-light",
-  dark: "bg-dark text-white"
+  dark: "bg-dark text-white",
+  transparent: "transparent",
 }
 
 ---
 
 <section class={cn(bgMap[bgValue])}>
-  <div class="container mx-auto py-12">
+  <div class="container mx-auto py-12 px-8">
     <slot />
   </div>
 </section>

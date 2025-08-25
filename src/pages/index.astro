@@ -13,23 +13,23 @@ import { getCollection } from 'astro:content'
 import Ico from '../components/Ico.astro'
 
 const steps = await getCollection('steps')
-
 ---
 
 <Layout>
-  <header>
-    <Content bg='light'>
-      <div class='grid grid-cols-2 items-center gap-8'>
+  <header class="head-bg">
+    <Content bg='transparent'>
+      <div class='grid grid-cols-1 md:grid-cols-2 items-center gap-8'>
         <div>
           <H1>Úsměv pro Adama</H1>
-          <H2 class="text-secondary text-left">Příběh naděje, síly a pomoci</H2>
-          <Text class="text-left">Vítejte na stránkách knihy, která přináší příběh odhodlání, lásky a
-            síly, kterou si člověk neuvědomuje, dokud nečelí nejtěžším
-            životním výzvám.</Text>
+          <H2 class='text-secondary text-left'>Příběh naděje, síly a pomoci</H2>
+          <Text class='text-left'
+            >Vítejte na stránkách knihy, která přináší příběh odhodlání, lásky a síly, kterou si člověk neuvědomuje,
+            dokud nečelí nejtěžším životním výzvám.</Text
+          >
         </div>
-        <div class="bg-[#F9EDE0] p-2 rounded-md w-max">
-          <Box class="inline-block p-3">
-            <img src="/img/header.png" alt="" class="w-[280px] rounded-md" />
+        <div class='bg-[#F9EDE0] p-2 rounded-md w-max m-auto'>
+          <Box class='inline-block p-3'>
+            <img src='/img/header.png' alt='' class='w-[280px] rounded-md' />
           </Box>
         </div>
       </div>
@@ -37,51 +37,65 @@ const steps = await getCollection('steps')
   </header>
   <main>
     <Content bg='white'>
-      <H2 class="text-left">O mně</H2>
-      <div class='grid grid-cols-2 items-center gap-8'>
+      <H2 class='text-left'>O mně</H2>
+      <div class='grid grid-cols-1 md:grid-cols-2 items-center gap-8'>
         <div>
-          <Text class="text-left">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
+          <Text class='text-left'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
           </Text>
-          <H3 class="text-left">Proč tato kniha vznikla?</H3>
-          <Text class="text-left">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
+          <H3 class='text-left'>Proč tato kniha vznikla?</H3>
+          <Text class='text-left'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
           </Text>
         </div>
-        <img src="/img/about.png" class='rounded-full w-[240px] h-[240px]' alt="" />
+        <img src='/img/about.png' class='m-auto rounded-full w-[240px] h-[240px]' alt='' />
       </div>
     </Content>
     <Content bg='light'>
       <H2>Co vás v knize čeká</H2>
-      <div class='grid grid-cols-2 items-center gap-8'>
+      <div class='grid grid-cols-1 md:grid-cols-2 items-center gap-8'>
         <div>
-          <Text class="text-left">
-            Tato kniha nabízí nejen příběh, ale také konkrétní rady  a praktické tipy pro lidi, kteří čelí ztrátě blízkého  včetně přehledného harmonogramu kroků k vyřízení formou letáku ke stažení <TextLink href="/aaa">zde</TextLink>.
+          <Text class='text-left'>
+            Tato kniha nabízí nejen příběh, ale také konkrétní rady  a praktické tipy pro lidi, kteří čelí ztrátě
+            blízkého včetně přehledného harmonogramu kroků k vyřízení formou letáku ke stažení <TextLink href='/aaa'
+              >zde</TextLink
+            >.
           </Text>
-          <Text class="text-left">
-            Prošli jsme poslední 4 roky z fáze „Neboj, bude lépe" přes fázi
-            „Nikdy není tak zle, aby nemohlo být ještě hůře" do fáze „Co tě
-            nezabije, to tě posílí" s vedlejšími účinky, jako je nežádoucí
-            černý humor a „lehce" ironický nadhled.
+          <Text class='text-left'>
+            Prošli jsme poslední 4 roky z fáze „Neboj, bude lépe" přes fázi „Nikdy není tak zle, aby nemohlo být ještě
+            hůře" do fáze „Co tě nezabije, to tě posílí" s vedlejšími účinky, jako je nežádoucí černý humor a „lehce"
+            ironický nadhled.
           </Text>
         </div>
-        <img src="/img/book.png" class='rounded-full w-[240px] h-[240px]' alt="" />
+        <img src='/img/book.png' class='m-auto rounded-full w-[240px] h-[240px]' alt='' />
       </div>
-      <Box class="mt-8">
+      <Box class='mt-8'>
         <H3>Kapitoly</H3>
         <ol>
           <Li>
-            <Chapter index={1} title="saddas" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u" />
+            <Chapter
+              index={1}
+              title='saddas'
+              description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u'
+            />
           </Li>
           <Li>
-            <Chapter index={2} title="saddas" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u" />
+            <Chapter
+              index={2}
+              title='saddas'
+              description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u'
+            />
           </Li>
           <Li>
-            <Chapter index={3} title="saddas" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u" />
+            <Chapter
+              index={3}
+              title='saddas'
+              description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u'
+            />
           </Li>
         </ol>
       </Box>
@@ -89,23 +103,29 @@ const steps = await getCollection('steps')
     <Content bg='white'>
       <H2>Kroky po úmrtí blízkého</H2>
       <Text>
-        Tato kniha nabízí nejen příběh, ale také konkrétní rady a praktické tipy pro lidi, kteří čelí ztrátě
-        blízkého.
+        Tato kniha nabízí nejen příběh, ale také konkrétní rady a praktické tipy pro lidi, kteří čelí ztrátě blízkého.
       </Text>
-      <div class="grid grid-cols-3">
-        {steps.map(step => <Box class="flex flex-col gap-2 items-center">
-          <Ico>X</Ico>
-          <H3>{step.data.title}</H3>
-          <a href={"/kroky/" + step.data.slug} class="bg-secondary text-white py-2 px-4 rounded-md">Číst více</a>
-        </Box>)}
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-4'>
+        {
+          steps.map((step) => (
+            <Box class='flex flex-col gap-2 items-center'>
+              <Ico>X</Ico>
+              <H3>{step.data.title}</H3>
+              <a href={'/kroky/' + step.data.slug} class='bg-secondary text-white py-2 px-4 rounded-md'>
+                Číst více
+              </a>
+            </Box>
+          ))
+        }
       </div>
     </Content>
     <Content bg='light'>
       <H2>Podpora v těžkých chvílích</H2>
-      <Text>Praktické nástroje a techniky pro zvládání stresu, hledání vnitřní síly a postupné vyrovnávání
-        se s těžkými životními situacemi.
+      <Text
+        >Praktické nástroje a techniky pro zvládání stresu, hledání vnitřní síly a postupné vyrovnávání se s těžkými
+        životními situacemi.
       </Text>
-      <div class="grid grid-cols-3 gap-4">
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-4'>
         <Box>asd</Box>
         <Box>asd</Box>
         <Box>asd</Box>
@@ -114,20 +134,20 @@ const steps = await getCollection('steps')
     <Content bg='white'>
       <H2>Co čtenáři říkají o knize</H2>
       <Text>
-        Názory čtenářů jsou pro nás velmi cenné. Zde si můžete přečíst, jak kniha pomohla ostatním a
-        jaký dopad měla na jejich životy.
+        Názory čtenářů jsou pro nás velmi cenné. Zde si můžete přečíst, jak kniha pomohla ostatním a jaký dopad měla na
+        jejich životy.
       </Text>
-      <div class="grid grid-cols-3 gap-4">
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-4'>
         <Box>asd</Box>
         <Box>asd</Box>
         <Box>asd</Box>
       </div>
     </Content>¨
-    <Content bg="light">
+    <Content bg='light'>
       <H2>Získejte svůj výtisk</H2>
       <Text>
-        Tato kniha je dostupná zdarma díky podpoře nadace EPCG. Pro získání bezplatného výtisku
-        nám jednoduše napište na Instagram nebo na <TextLink href="mailto:autor@usmevproadama.cz">autor@usmevproadama.cz</TextLink>
+        Tato kniha je dostupná zdarma díky podpoře nadace EPCG. Pro získání bezplatného výtisku nám jednoduše napište na
+        Instagram nebo na <TextLink href='mailto:autor@usmevproadama.cz'>autor@usmevproadama.cz</TextLink>
       </Text>
     </Content>
   </main>

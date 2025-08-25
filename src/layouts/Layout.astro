@@ -19,14 +19,16 @@ import Content from '../components/Content.astro'
     <title>Web title</title>
   </head>
   <body>
-    <slot />
-    <footer class="text-center">
-      <Content bg="dark">
-        <strong class="inline-block text-lg mb-2">Úsměv pro Adama</strong>
-        <p class="text-tertiary">Příběh naděje, síly a pomoci. Kniha zdarma díky podpoře nadace EPCG.</p>
-        <p class="text-sm mt-4 text-[#E8BE94]">© {new Date().getFullYear()} Úsměv pro Adama. Všechna práva vyhrazena.</p>
-      </Content>
-    </footer>
+    <div class="layout">
+      <slot />
+      <footer class="text-center">
+        <Content bg="dark">
+          <strong class="inline-block text-lg mb-2">Úsměv pro Adama</strong>
+          <p class="text-tertiary">Příběh naděje, síly a pomoci. Kniha zdarma díky podpoře nadace EPCG.</p>
+          <p class="text-sm mt-4 text-[#E8BE94]">© {new Date().getFullYear()} Úsměv pro Adama. Všechna práva vyhrazena.</p>
+        </Content>
+      </footer>
+    </div>
   </body>
 </html>
 
