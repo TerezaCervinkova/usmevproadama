@@ -1,6 +1,7 @@
 ---
-title: Welcome to my blog 3
-slug: welcome-to-my-blog-fgt
+title: Krok 3
+slug: krok-3
+order: 3
 ---
 asdad
 

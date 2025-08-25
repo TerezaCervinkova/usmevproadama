@@ -1,6 +1,7 @@
 ---
-title: Welcome to my blog 4
-slug: welcome-to-my-blog-abc
+title: Krok 1
+slug: krok-1
+order: 1
 preview: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam erat volutpat. Maecenas libero. Vivamus luctus egestas leo. Phasellus rhoncus. Fusce wisi. Nullam eget nisl. Proin in tellus sit amet nibh dignissim sagittis. Sed convallis magna eu sem.
 ---
 

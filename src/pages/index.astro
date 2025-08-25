@@ -27,9 +27,9 @@ const steps = await getCollection('steps')
             dokud nečelí nejtěžším životním výzvám.</Text
           >
         </div>
-        <div class='bg-[#F9EDE0] p-2 rounded-md w-max m-auto'>
+        <div class='bg-[#F9EDE0] p-2 rounded-md w-full md:w-max m-auto'>
           <Box class='inline-block p-3'>
-            <img src='/img/header.png' alt='' class='w-[280px] rounded-md' />
+            <img src='/img/header.png' alt='' class='w-full md:w-[280px] rounded-md' />
           </Box>
         </div>
       </div>
@@ -52,7 +52,7 @@ const steps = await getCollection('steps')
             ea commodo consequat.
           </Text>
         </div>
-        <img src='/img/about.png' class='m-auto rounded-full w-[240px] h-[240px]' alt='' />
+        <img src='/img/about.png' class='m-auto rounded-full w-full h-full md:w-[240px] md:h-[240px]' alt='' />
       </div>
     </Content>
     <Content bg='light'>
@@ -71,7 +71,7 @@ const steps = await getCollection('steps')
             ironický nadhled.
           </Text>
         </div>
-        <img src='/img/book.png' class='m-auto rounded-full w-[240px] h-[240px]' alt='' />
+        <img src='/img/book.png' class='m-auto rounded-full w-full h-full md:w-[240px] md:h-[240px]' alt='' />
       </div>
       <Box class='mt-8'>
         <H3>Kapitoly</H3>
@@ -107,7 +107,7 @@ const steps = await getCollection('steps')
       </Text>
       <div class='grid grid-cols-1 md:grid-cols-3 gap-4'>
         {
-          steps.map((step) => (
+          steps.sort((a,b)=>a.data.order - b.data.order).map((step) => (
             <Box class='flex flex-col gap-2 items-center'>
               <Ico>X</Ico>
               <H3>{step.data.title}</H3>

@@ -9,6 +9,7 @@ const steps = defineCollection({
   schema: z.object({
     title: z.string(),
     slug: z.string(),
+    order: z.number(),
     preview: z.string().optional().nullable(),
   }),
 });
