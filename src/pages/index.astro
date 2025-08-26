@@ -11,12 +11,14 @@ import Chapter from '../components/Chapter.astro'
 import TextLink from '../components/TextLink.astro'
 import { getCollection } from 'astro:content'
 import Ico from '../components/Ico.astro'
+import LinkButton from '../components/LinkButton.astro'
+import SupportBox from '../components/SupportBox.astro'
 
 const steps = await getCollection('steps')
 ---
 
 <Layout>
-  <header class="head-bg">
+  <header class='head-bg'>
     <Content bg='transparent'>
       <div class='grid grid-cols-1 md:grid-cols-2 items-center gap-8'>
         <div>
@@ -26,6 +28,10 @@ const steps = await getCollection('steps')
             >Vítejte na stránkách knihy, která přináší příběh odhodlání, lásky a síly, kterou si člověk neuvědomuje,
             dokud nečelí nejtěžším životním výzvám.</Text
           >
+          <div class='flex gap-4 flex-col md:flex-row'>
+            <LinkButton href='/xxx' theme='primary' class='head-button'>Získat bezplatný výtisk</LinkButton>
+            <LinkButton href='/asds' theme='outline'>Číst ukázku</LinkButton>
+          </div>
         </div>
         <div class='bg-[#F9EDE0] p-2 rounded-md w-full md:w-max m-auto'>
           <Box class='inline-block p-3'>
@@ -79,22 +85,64 @@ const steps = await getCollection('steps')
           <Li>
             <Chapter
               index={1}
-              title='saddas'
-              description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u'
+              title='Tady a teď'
+              description='„Život s Adamem má spoustu omezení, ale ráda Vám vysvětlím, jak jsme se k handicapu dostali a proč jsem ochotná mu dát vše i za cenu vlastního štěstí a životní síly. Pro mě je Adam chodící zázrak, můj zdroj, moje naděje a můj život."'
             />
           </Li>
           <Li>
             <Chapter
               index={2}
-              title='saddas'
-              description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u'
+              title='Adam byl zdravý'
+              description='„Adam se rád smál, když zrovna nepřemýšlel a nezkoumal, tak se prostě smál. Nezažila jsem u něj smutky, málokdy se i rozčiloval, prostě byl takový kliďas. A zbožňoval tátu, ti dva byli nerozlučná dvojka, mazlili se, hráli si, zkoušeli spolu všechny blbosti a hlavně koupání, to byla jejich každovečerní aktivita."'
             />
           </Li>
           <Li>
             <Chapter
               index={3}
-              title='saddas'
-              description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u'
+              title='Adam měl tátu'
+              description='„Co kdyby ten den nejel/a autem? Co kdybych do obchodu dojel/a místo něj/ní já? Co kdybychom do nemocnice jeli dříve? Co kdybych zavolal/a sanitku dříve? Co kdyby, co kdyby… Tyto úvahy jsem slyšela snad od každého ovdovělého rodiče, kterého jsem měla možnost poznat."'
+            />
+          </Li>
+          <Li>
+            <Chapter
+              index={4}
+              title='Adam a strážní andělé'
+              description='„Když jsem si myslela, že už to dlouho zvládat nebudu, tak přišla pomoc, a to v podobě rány do předního nárazníku."'
+            />
+          </Li>
+          <Li>
+            <Chapter
+              index={5}
+              title='Adam byl nemocný'
+              description='„Přijeli jsme v noci, Adam byl bledý, přestával reagovat, měl horečku a pozvracel mě, což u něj bylo extrémně vzácné. Od tragédie nás dělilo pár hodin, ale to jsem v tu chvíli nevěděla."'
+            />
+          </Li>
+          <Li>
+            <Chapter
+              index={6}
+              title='Adam je doma'
+              description='„Bojovali jsme. Vyhráli jsme. Nevím, zda to bylo štěstí, osud nebo něco vyslyšelo naše přání, ale vím, že do konce života si ten zázrak ponesu v sobě. S pokorou, s vděkem a s úplně jiným pohledem na svět."'
+            />
+          </Li>
+          <Li>
+            <Chapter
+              index={7}
+              title='Adam dnes'
+              description='„Tak často se setkáváme se šikanou, ať už Adam nebo já jako rodič, až mě i párkrát napadlo, jestli by vlastně pro nás nebylo lepší, kdybychom to tehdy oba nepřežili. Až do takových stavů mě společnost a absolutně nezvládnutá inkluze v ČR dostávají. Místo toho, aby lidé vnímali ten zázrak, kterým Adam je a ten smutný příběh, kterým jsme oba prošli, tak nám naši cestu neustále ztěžují sobeckostí, závistí (ano, opravdu!) a pokrytectvím."'
+            />
+          </Li>
+          <Li>
+            <Chapter
+              index={8}
+              title='Změna není konec'
+              description='„Bolest má své kouzlo – spojuje lidi. Spojila například tisíce lidí během medializace našeho příběhu, vzbudila empatii ve stovkách lidí, kteří se podíleli na sbírce pro Adama. Bolest mi našla nejlepší kamarádku s podobným osudem. Bolest nám do života přivedla náhradní babičku a další výjimečné lidi. Sdílení bolesti pomáhá, ulevuje a propojuje lidi, kteří se jinak nemohou propojit se svým okolím. Jakmile potkáte někoho s podobným příběhem, v hlavě to udělá „klik" a chováte se k tomu člověku, jako byste se znali roky, a to jen díky tomu, že sdílíte bolest."'
+            />
+          </Li>
+          <Li>
+            <Chapter
+              index={9}
+              title='Duben 2025'
+              description='„Téměř čtyři roky se snažím nalézt novou cestu, nový směr a téměř čtyři roky jsem nebyla objektivně schopná přijít na to, proč ostatním v mé situaci to jde a mě ne. A problémem jsem celou dobu byla já. Já a má vina sama k sobě."'
             />
           </Li>
         </ol>
@@ -102,38 +150,40 @@ const steps = await getCollection('steps')
     </Content>
     <Content bg='white'>
       <H2>Kroky po úmrtí blízkého</H2>
-      <Text>
+      <Text class="pb-4">
         Tato kniha nabízí nejen příběh, ale také konkrétní rady a praktické tipy pro lidi, kteří čelí ztrátě blízkého.
       </Text>
       <div class='grid grid-cols-1 md:grid-cols-3 gap-4'>
         {
-          steps.sort((a,b)=>a.data.order - b.data.order).map((step) => (
-            <Box class='flex flex-col gap-2 items-center'>
-              <Ico>X</Ico>
-              <H3>{step.data.title}</H3>
-              <a href={'/kroky/' + step.data.slug} class='bg-secondary text-white py-2 px-4 rounded-md'>
-                Číst více
-              </a>
-            </Box>
-          ))
+          steps
+            .sort((a, b) => a.data.order - b.data.order)
+            .map((step) => (
+              <Box class='flex flex-col gap-2 items-center'>
+                <Ico>X</Ico>
+                <H3>{step.data.title}</H3>
+                <LinkButton href={'/kroky/' + step.data.slug} theme='primary'>
+                  Číst více
+                </LinkButton>
+              </Box>
+            ))
         }
       </div>
     </Content>
     <Content bg='light'>
       <H2>Podpora v těžkých chvílích</H2>
-      <Text
-        >Praktické nástroje a techniky pro zvládání stresu, hledání vnitřní síly a postupné vyrovnávání se s těžkými
+      <Text class="pb-4">
+        Praktické nástroje a techniky pro zvládání stresu, hledání vnitřní síly a postupné vyrovnávání se s těžkými
         životními situacemi.
       </Text>
       <div class='grid grid-cols-1 md:grid-cols-3 gap-4'>
-        <Box>asd</Box>
-        <Box>asd</Box>
-        <Box>asd</Box>
+        <SupportBox headline="Metody sebereflexe a zvládání stresu" description="Sebereflexe a zvládání stresu jsou klíčové dovednosti pro každého, kdo prochází náročným obdobím. Umožňují nám zastavit se, podívat se na situaci s odstupem a zvolit cestu, která nás posune dál. Nejde o to být „pořád v pohodě', ale naučit se rozpoznat, co se v nás děje, a vědomě s tím pracovat." image="/img/support-1.png" />
+        <SupportBox headline="Metody sebereflexe a zvládání stresu" description="Síla není o tom neplakat nebo „držet se' za každou cenu. Skutečná síla spočívá v tom, že umíš uznat své emoce a přesto najdeš způsob, jak pokračovat dál." image="/img/support-2.png"/>
+        <SupportBox headline="Praktické kroky pro vyrovnání se s těžkými situacemi" description="Těžké životní chvíle mohou přijít nečekaně – nemoc, ztráta blízkého, rozpad vztahu, finanční krize. Není možné se na ně vždy připravit, ale lze se naučit, jak jimi projít bez úplného vyčerpání." image="/img/support-3.png"/>
       </div>
     </Content>
     <Content bg='white'>
       <H2>Co čtenáři říkají o knize</H2>
-      <Text>
+      <Text class="pb-4">
         Názory čtenářů jsou pro nás velmi cenné. Zde si můžete přečíst, jak kniha pomohla ostatním a jaký dopad měla na
         jejich životy.
       </Text>

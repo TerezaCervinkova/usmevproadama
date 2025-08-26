@@ -18,6 +18,11 @@
     min-height: 100vh;
 }
 
+.head-button {
+    background: #D88A42;
+    background: linear-gradient(90deg,rgba(216, 138, 66, 1) 0%, rgba(195, 116, 58, 1) 48%);
+}
+
 .head-bg {
     background: #FDF8F0;
     background: linear-gradient(180deg,rgba(253, 248, 240, 1) 0%, rgba(254, 252, 248, 1) 48%, rgba(253, 248, 240, 1) 100%);
