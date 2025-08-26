@@ -10,7 +10,8 @@ const steps = defineCollection({
     title: z.string(),
     slug: z.string(),
     order: z.number(),
-    preview: z.string().optional().nullable(),
+    preview: z.string(),
+    icoPath: z.string().optional(),
   }),
 });
 

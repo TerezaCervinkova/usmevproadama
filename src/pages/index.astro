@@ -13,6 +13,7 @@ import { getCollection } from 'astro:content'
 import Ico from '../components/Ico.astro'
 import LinkButton from '../components/LinkButton.astro'
 import SupportBox from '../components/SupportBox.astro'
+import RatingBox from '../components/RatingBox.astro'
 
 const steps = await getCollection('steps')
 ---
@@ -158,12 +159,19 @@ const steps = await getCollection('steps')
           steps
             .sort((a, b) => a.data.order - b.data.order)
             .map((step) => (
-              <Box class='flex flex-col gap-2 items-center'>
-                <Ico>X</Ico>
-                <H3>{step.data.title}</H3>
-                <LinkButton href={'/kroky/' + step.data.slug} theme='primary'>
-                  Číst více
-                </LinkButton>
+              <Box class='steps-box'>
+                <div class="w-full flex flex-col items-center">
+                  <Ico class="w-[40px] h-[40px]">
+                    <img src={step.data.icoPath} alt="" />
+                  </Ico>
+                  <H3 class="text-dark font-semibold text-lg">{step.data.title}</H3>
+                </div>
+                <Text class="text-sm">{step.data.preview}</Text>
+                <div class="w-full flex flex-col items-center">
+                  <LinkButton href={'/kroky/' + step.data.slug} theme='primary'>
+                    Číst více
+                  </LinkButton>
+                </div>
               </Box>
             ))
         }
@@ -188,9 +196,9 @@ const steps = await getCollection('steps')
         jejich životy.
       </Text>
       <div class='grid grid-cols-1 md:grid-cols-3 gap-4'>
-        <Box>asd</Box>
-        <Box>asd</Box>
-        <Box>asd</Box>
+        <RatingBox rating='"Tato kniha se mě hluboce dotkla. Není to jen příběh, ale průvodce pro každého, kdo čelí nejtěžším životním chvílím."' author="Anna K." />
+        <RatingBox rating='"Praktické nástroje v této knize mi pomohly navigovat vlastním obtížným obdobím. Vřele doporučím."' author="Petr M." />
+        <RatingBox rating='"Krásné svědectví o síle lásky a odolnosti. Tato kniha ve mně zůstane navždy."' author="Lucie S." />
       </div>
     </Content>¨
     <Content bg='light'>

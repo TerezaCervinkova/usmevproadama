@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content'
 import Layout from '../../layouts/Layout.astro'
 import Content from '../../components/Content.astro'
 import H1 from '../../components/H1.astro'
+import Box from '../../components/Box.astro'
 
 export async function getStaticPaths() {
   const steps = await getCollection('steps')
@@ -21,11 +22,19 @@ const { Content: RenderedContent } = await render(step)
   <main>
     <Content bg="light">
       <nav class="mb-4">
-        <a href="/" class="text-secondary">Zpět na hlavní stránku</a>
+        <a href="/" class="text-secondary underline">Zpět na hlavní stránku</a>
       </nav>
       <H1 class='text-3xl'>{step.data.title}</H1>
-      <div class='md-content pb-16'>
+      <div class='md-content pb-16 md-content'>
         <RenderedContent />
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <Box class="shadow-none">
+          sad
+        </Box>
+        <Box class="shadow-none bg-[#FDF8F0]">
+          sad
+        </Box>
       </div>
     </Content>
   </main>
