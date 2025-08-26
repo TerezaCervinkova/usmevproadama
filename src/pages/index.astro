@@ -25,10 +25,10 @@ const steps = await getCollection('steps')
         <div>
           <H1>Úsměv pro Adama</H1>
           <H2 class='text-secondary text-left'>Příběh naděje, síly a pomoci</H2>
-          <Text class='text-left'
-            >Vítejte na stránkách knihy, která přináší příběh odhodlání, lásky a síly, kterou si člověk neuvědomuje,
-            dokud nečelí nejtěžším životním výzvám.</Text
-          >
+          <Text class='text-left'>
+            Vítejte na stránkách knihy, která přináší příběh odhodlání, lásky a síly, kterou si člověk neuvědomuje,
+            dokud nečelí nejtěžším životním výzvám.
+          </Text>
           <div class='flex gap-4 flex-col md:flex-row'>
             <LinkButton href='/xxx' theme='primary' class='head-button'>Získat bezplatný výtisk</LinkButton>
             <LinkButton href='/asds' theme='outline'>Číst ukázku</LinkButton>
@@ -164,7 +164,7 @@ const steps = await getCollection('steps')
                   <Ico class="w-[40px] h-[40px]">
                     <img src={step.data.icoPath} alt="" />
                   </Ico>
-                  <H3 class="text-dark font-semibold text-lg">{step.data.title}</H3>
+                  <H3 class="text-dark font-semibold text-lg mb-1">{step.data.title}</H3>
                 </div>
                 <Text class="text-sm">{step.data.preview}</Text>
                 <div class="w-full flex flex-col items-center">
