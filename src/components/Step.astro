@@ -1,6 +1,32 @@
 ---
 
 import Box from './Box.astro'
+import LinkButton from './LinkButton.astro'
+import Text from './Text.astro'
+import H3 from './H3.astro'
+import Ico from './Ico.astro'
+import type { StepType } from '../schema/step.schema'
+
+interface Props {
+  step: StepType
+}
+
+const { step} = Astro.props
+
 ---
 
-<Box>asd</Box>
+<Box class='steps-box'>
+  <div class="w-full flex flex-col items-center">
+    <Ico class="w-[40px] h-[40px]">
+      <img src={step.icoPath} alt="" />
+    </Ico>
+    <H3 class="text-dark font-semibold text-lg mb-1">{step.title}</H3>
+  </div>
+  <Text class="text-sm">{step.preview}</Text>
+  <slot />
+  <div class="w-full flex flex-col items-center">
+    <LinkButton href={'/kroky/' + step.slug} theme='primary'>
+      Číst více
+    </LinkButton>
+  </div>
+</Box>

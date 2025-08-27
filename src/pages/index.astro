@@ -10,10 +10,11 @@ import Li from '../components/Li.astro'
 import Chapter from '../components/Chapter.astro'
 import TextLink from '../components/TextLink.astro'
 import { getCollection } from 'astro:content'
-import Ico from '../components/Ico.astro'
 import LinkButton from '../components/LinkButton.astro'
 import SupportBox from '../components/SupportBox.astro'
 import RatingBox from '../components/RatingBox.astro'
+import Step from '../components/Step.astro'
+import Note from '../components/Note.astro'
 
 const steps = await getCollection('steps')
 ---
@@ -68,9 +69,7 @@ const steps = await getCollection('steps')
         <div>
           <Text class='text-left'>
             Tato kniha nabízí nejen příběh, ale také konkrétní rady  a praktické tipy pro lidi, kteří čelí ztrátě
-            blízkého včetně přehledného harmonogramu kroků k vyřízení formou letáku ke stažení <TextLink href='/aaa'
-              >zde</TextLink
-            >.
+            blízkého včetně přehledného harmonogramu kroků k vyřízení formou letáku ke stažení <TextLink href='/aaa'>zde</TextLink>.
           </Text>
           <Text class='text-left'>
             Prošli jsme poslední 4 roky z fáze „Neboj, bude lépe" přes fázi „Nikdy není tak zle, aby nemohlo být ještě
@@ -158,22 +157,7 @@ const steps = await getCollection('steps')
         {
           steps
             .sort((a, b) => a.data.order - b.data.order)
-            .map((step) => (
-              <Box class='steps-box'>
-                <div class="w-full flex flex-col items-center">
-                  <Ico class="w-[40px] h-[40px]">
-                    <img src={step.data.icoPath} alt="" />
-                  </Ico>
-                  <H3 class="text-dark font-semibold text-lg mb-1">{step.data.title}</H3>
-                </div>
-                <Text class="text-sm">{step.data.preview}</Text>
-                <div class="w-full flex flex-col items-center">
-                  <LinkButton href={'/kroky/' + step.data.slug} theme='primary'>
-                    Číst více
-                  </LinkButton>
-                </div>
-              </Box>
-            ))
+            .map((step) => <Step step={step.data} />)
         }
       </div>
     </Content>
@@ -184,9 +168,49 @@ const steps = await getCollection('steps')
         životními situacemi.
       </Text>
       <div class='grid grid-cols-1 md:grid-cols-3 gap-4'>
-        <SupportBox headline="Metody sebereflexe a zvládání stresu" description="Sebereflexe a zvládání stresu jsou klíčové dovednosti pro každého, kdo prochází náročným obdobím. Umožňují nám zastavit se, podívat se na situaci s odstupem a zvolit cestu, která nás posune dál. Nejde o to být „pořád v pohodě', ale naučit se rozpoznat, co se v nás děje, a vědomě s tím pracovat." image="/img/support-1.png" />
-        <SupportBox headline="Metody sebereflexe a zvládání stresu" description="Síla není o tom neplakat nebo „držet se' za každou cenu. Skutečná síla spočívá v tom, že umíš uznat své emoce a přesto najdeš způsob, jak pokračovat dál." image="/img/support-2.png"/>
-        <SupportBox headline="Praktické kroky pro vyrovnání se s těžkými situacemi" description="Těžké životní chvíle mohou přijít nečekaně – nemoc, ztráta blízkého, rozpad vztahu, finanční krize. Není možné se na ně vždy připravit, ale lze se naučit, jak jimi projít bez úplného vyčerpání." image="/img/support-3.png"/>
+        <SupportBox headline="Metody sebereflexe a zvládání stresu" description="Sebereflexe a zvládání stresu jsou klíčové dovednosti pro každého, kdo prochází náročným obdobím. Umožňují nám zastavit se, podívat se na situaci s odstupem a zvolit cestu, která nás posune dál. Nejde o to být „pořád v pohodě', ale naučit se rozpoznat, co se v nás děje, a vědomě s tím pracovat." image="/img/support-1.png">
+          <div class="flex flex-col gap-2">
+            <Note>
+              <strong>Co si odnést</strong>: Sebereflexe není o hledání
+              chyb, ale o nacházení cesty k sobě. Čím
+              víc ji trénuješ, tím snáz zvládáš stres a
+              těžké chvíle.
+            </Note>
+            <Note>
+              <strong>Užitečné kontakty:</strong><br/>
+              Linka první psychické pomoci: <strong>116 123</strong> (zdarma,
+              nonstop)
+            </Note>
+          </div>
+        </SupportBox>
+        <SupportBox headline="Metody sebereflexe a zvládání stresu" description="Síla není o tom neplakat nebo „držet se' za každou cenu. Skutečná síla spočívá v tom, že umíš uznat své emoce a přesto najdeš způsob, jak pokračovat dál." image="/img/support-2.png">
+          <div class="flex flex-col gap-2">
+            <Note>
+              <strong>Co si odnést</strong>: Zůstat silný neznamená
+              necítit bolest. Znamená to umět jít dál, i
+              když ji cítíš.
+            </Note>
+            <Note>
+              <strong>Užitečné kontakty:</strong><br/>
+              Linka bezpečí: <strong>116 111</strong> (děti a mládež)<br/>
+              Linka pro rodinu: <strong>116 000</strong>
+            </Note>
+          </div>
+        </SupportBox>
+        <SupportBox headline="Praktické kroky pro vyrovnání se s těžkými situacemi" description="Těžké životní chvíle mohou přijít nečekaně – nemoc, ztráta blízkého, rozpad vztahu, finanční krize. Není možné se na ně vždy připravit, ale lze se naučit, jak jimi projít bez úplného vyčerpání." image="/img/support-3.png">
+          <div class="flex flex-col gap-2">
+            <Note>
+              <strong>Co si odnést</strong>: Vyrovnat se s těžkou situací
+              je proces, ne jednorázové rozhodnutí.
+              Každý malý krok vpřed je vítězství.
+            </Note>
+            <Note>
+              <strong>V akutní krizi:</strong><br/>
+              <strong>116 123</strong> (Linka první psychické pomoci)<br/>
+              <strong>155 / 112</strong> (v ohrožení života)
+            </Note>
+          </div>
+        </SupportBox>
       </div>
     </Content>
     <Content bg='white'>

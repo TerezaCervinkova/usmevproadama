@@ -1,18 +1,13 @@
-import { defineCollection, z } from "astro:content";
+import { defineCollection } from "astro:content";
 import { glob } from "astro/loaders";
+import { stepSchema } from "./schema/step.schema.ts";
 
 const steps = defineCollection({
   loader: glob({
     pattern: ["*.md"],
     base: "src/content/steps",
   }),
-  schema: z.object({
-    title: z.string(),
-    slug: z.string(),
-    order: z.number(),
-    preview: z.string(),
-    icoPath: z.string().optional(),
-  }),
+  schema: stepSchema,
 });
 
 export const collections = { steps };
