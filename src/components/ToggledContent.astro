@@ -1,0 +1,29 @@
+---
+interface Props {
+  label: string
+  id: string
+}
+
+const { label, id } = Astro.props
+---
+<div id={id} class="toggle-content" data-visible='false'>
+  <div class='flex justify-between items-center pb-2'>
+    <p class="text-sm font-semibold">{label}</p>
+    <button id="arrow-button" type='button' class="w-[14px] cursor-pointer">
+      <img src="/icons/arrow-down.svg" alt="" />
+    </button>
+  </div>
+  <div class='border-l border-secondary mb-2 px-4 toggle-content__slot' data-content >
+    <slot />
+  </div>
+</div>
+
+<script define:vars={{ id }}>
+  const button = document.querySelector(`#${id} #arrow-button`)
+  const container = document.querySelector(`#${id}`)
+
+  button.addEventListener('click', () => {
+    const isVisible = container.getAttribute('data-visible') === 'true'
+    container.setAttribute('data-visible', String(!isVisible))
+  })
+</script>

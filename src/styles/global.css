@@ -50,6 +50,40 @@
     }
 }
 
+.toggle-content[data-visible='true'] div[data-content] {
+    @apply block;
+}
+
+.toggle-content[data-visible='true'] #arrow-button {
+    transform: rotate(180deg);
+}
+
+.toggle-content[data-visible='false'] div[data-content] {
+    @apply hidden;
+}
+
+.toggle-content[data-visible='false'] #arrow-button {
+    transform: rotate(0deg);
+}
+
+.toggle-content #arrow-button {
+    transition: transform 0.3s ease;
+}
+
+.toggle-content__slot {
+    @apply text-sm
+}
+
+.toggle-content__slot ul {
+    list-style: disc;
+    margin-left: 10px;
+}
+
+.toggle-content__slot ul ul {
+    list-style: square;
+    margin-left: 15px;
+}
+
 /*    ------------------------------------- */
 .md-content h2 {
     @apply text-lg mt-6 mb-4 text-secondary;

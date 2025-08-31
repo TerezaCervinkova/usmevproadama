@@ -15,6 +15,7 @@ import SupportBox from '../components/SupportBox.astro'
 import RatingBox from '../components/RatingBox.astro'
 import Step from '../components/Step.astro'
 import Note from '../components/Note.astro'
+import ToggledContent from '../components/ToggledContent.astro'
 
 const steps = await getCollection('steps')
 ---
@@ -49,11 +50,15 @@ const steps = await getCollection('steps')
       <div class='grid grid-cols-1 md:grid-cols-2 items-center gap-8'>
         <div>
           <Text class='text-left'>
-            Jsem matka, která po ztrátě partnera a těžké nemoci svého syna Adama prochází cestou, která mi ukázala sílu v sobě i v lidech kolem mě. Tato kniha není jen příběhem, ale i nástrojem, jak se vyrovnat s tragédiemi a najít nové smysly života. Příběh Adama je příběhem nejen jeho, ale i všech dětí a rodičů, kteří se nevzdávají a i přes životní tragédie dělají své maximum.
+            Jsem matka, která po ztrátě partnera a těžké nemoci svého syna Adama prochází cestou, která mi ukázala sílu
+            v sobě i v lidech kolem mě. Tato kniha není jen příběhem, ale i nástrojem, jak se vyrovnat s tragédiemi a
+            najít nové smysly života. Příběh Adama je příběhem nejen jeho, ale i všech dětí a rodičů, kteří se
+            nevzdávají a i přes životní tragédie dělají své maximum.
           </Text>
           <H3 class='text-left'>Proč tato kniha vznikla?</H3>
           <Text class='text-left'>
-            Chceme, aby nikdo nemusel procházet těžkým obdobím po ztrátě blízkého s pocitem, že je v tom sám. Sdílením našeho příběhu nabízíme oporu, naději a praktické rady všem, kdo čelí ztrátě, nemoci či životní změně.
+            Chceme, aby nikdo nemusel procházet těžkým obdobím po ztrátě blízkého s pocitem, že je v tom sám. Sdílením
+            našeho příběhu nabízíme oporu, naději a praktické rady všem, kdo čelí ztrátě, nemoci či životní změně.
           </Text>
         </div>
         <img src='/img/about.webp' class='m-auto rounded-full w-full h-full md:w-[240px] md:h-[240px]' alt='' />
@@ -65,7 +70,9 @@ const steps = await getCollection('steps')
         <div>
           <Text class='text-left'>
             Tato kniha nabízí nejen příběh, ale také konkrétní rady  a praktické tipy pro lidi, kteří čelí ztrátě
-            blízkého včetně přehledného harmonogramu kroků k vyřízení formou letáku ke stažení <TextLink href='/aaa'>zde</TextLink>.
+            blízkého včetně přehledného harmonogramu kroků k vyřízení formou letáku ke stažení <TextLink href='/aaa'
+              >zde</TextLink
+            >.
           </Text>
           <Text class='text-left'>
             Prošli jsme poslední 4 roky z fáze „Neboj, bude lépe" přes fázi „Nikdy není tak zle, aby nemohlo být ještě
@@ -146,63 +153,117 @@ const steps = await getCollection('steps')
     </Content>
     <Content bg='white'>
       <H2>Kroky po úmrtí blízkého</H2>
-      <Text class="pb-4">
+      <Text class='pb-4'>
         Tato kniha nabízí nejen příběh, ale také konkrétní rady a praktické tipy pro lidi, kteří čelí ztrátě blízkého.
       </Text>
       <div class='grid grid-cols-1 md:grid-cols-3 gap-4'>
-        {
-          steps
-            .sort((a, b) => a.data.order - b.data.order)
-            .map((step) => <Step step={step.data} />)
-        }
+        {steps.sort((a, b) => a.data.order - b.data.order).map((step) => <Step step={step.data} />)}
       </div>
     </Content>
     <Content bg='light'>
       <H2>Podpora v těžkých chvílích</H2>
-      <Text class="pb-4">
+      <Text class='pb-4'>
         Praktické nástroje a techniky pro zvládání stresu, hledání vnitřní síly a postupné vyrovnávání se s těžkými
         životními situacemi.
       </Text>
       <div class='grid grid-cols-1 md:grid-cols-3 gap-4'>
-        <SupportBox headline="Metody sebereflexe a zvládání stresu" description="Sebereflexe a zvládání stresu jsou klíčové dovednosti pro každého, kdo prochází náročným obdobím. Umožňují nám zastavit se, podívat se na situaci s odstupem a zvolit cestu, která nás posune dál. Nejde o to být „pořád v pohodě', ale naučit se rozpoznat, co se v nás děje, a vědomě s tím pracovat." image="/img/support-1.webp">
-          <div class="flex flex-col gap-2">
+        <SupportBox
+          headline='Metody sebereflexe a zvládání stresu'
+          description="Sebereflexe a zvládání stresu jsou klíčové dovednosti pro každého, kdo prochází náročným obdobím. Umožňují nám zastavit se, podívat se na situaci s odstupem a zvolit cestu, která nás posune dál. Nejde o to být „pořád v pohodě', ale naučit se rozpoznat, co se v nás děje, a vědomě s tím pracovat."
+          image='/img/support-1.webp'
+        >
+          <div class='flex flex-col gap-2'>
+            <ToggledContent label='Praktické metody' id='step1'>
+              <ul>
+                <li><strong>Denní záznam myšlenek a pocitů</strong> – zapisuj si ráno nebo večer, co se ti honí hlavou. Pomáhá to vyčistit mysl a odhalit vzorce chování.</li>
+                <li><strong>Technika „STOP"</strong> – kdykoliv cítíš, že tě ovládá stres:
+                  <ul>
+                    <li>S – Zastav se.</li>
+                    <li>T – Tři hluboké nádechy.</li>
+                    <li>O – Otoč pozornost k tomu, co právě děláš.</li>
+                    <li>P – Pokračuj s novým nastavením.</li>
+                  </ul>
+                </li>
+                <li><strong>Reflexe otázek</strong>– polož si otázky: „Co je pro mě teď nejdůležitější?", „Co v této situaci opravdu ovlivním?"</li>
+                <li><strong>Mindfulness pro začátečníky</strong> – věnuj 5 minut denně vnímání dechu, těla a okolí bez hodnocení.</li>
+                <li><strong>Tělesná aktivita</strong> – i krátká procházka nebo strečink zklidní tělo a tím i mysl.</li>
+              </ul>
+            </ToggledContent>
             <Note>
-              <strong>Co si odnést</strong>: Sebereflexe není o hledání
-              chyb, ale o nacházení cesty k sobě. Čím
-              víc ji trénuješ, tím snáz zvládáš stres a
-              těžké chvíle.
+              <strong>Co si odnést</strong>: Sebereflexe není o hledání chyb, ale o nacházení cesty k sobě. Čím víc ji
+              trénuješ, tím snáz zvládáš stres a těžké chvíle.
             </Note>
             <Note>
-              <strong>Užitečné kontakty:</strong><br/>
-              Linka první psychické pomoci: <strong>116 123</strong> (zdarma,
-              nonstop)
+              <strong>Užitečné kontakty:</strong><br />
+              Linka první psychické pomoci: <strong>116 123</strong> (zdarma, nonstop)
             </Note>
           </div>
         </SupportBox>
-        <SupportBox headline="Metody sebereflexe a zvládání stresu" description="Síla není o tom neplakat nebo „držet se' za každou cenu. Skutečná síla spočívá v tom, že umíš uznat své emoce a přesto najdeš způsob, jak pokračovat dál." image="/img/support-2.webp">
-          <div class="flex flex-col gap-2">
+        <SupportBox
+          headline='Metody sebereflexe a zvládání stresu'
+          description="Síla není o tom neplakat nebo „držet se' za každou cenu. Skutečná síla spočívá v tom, že umíš uznat své emoce a přesto najdeš způsob, jak pokračovat dál."
+          image='/img/support-2.webp'
+        >
+          <div class='flex flex-col gap-2'>
+            <ToggledContent label='Techniky pro udržení vnitřní síly' id='step2'>
+              <ul>
+                <li><strong>Malé denní cíle</strong> – zaměř se na to, co je zvládnutelné dnes, ne na celý život.</li>
+                <li>
+                  <strong>Opěrné body</strong> – lidé, místa nebo rituály, které ti dodávají jistotu (např. oblíbená kavárna, telefonát s
+                  blízkým).
+                </li>
+                <li><strong>Pozitivní kotvy</strong> – vědomě si připomínej tři věci, za které jsi vděčný, každý den.</li>
+                <li>
+                  <strong>Uvolňovací techniky</strong> – hudba, malování, zahradničení, modlitba – cokoliv, co ti pomáhá „vypnout hlavu".
+                </li>
+                <li>
+                  <strong>Sdílení příběhu</strong> – mluvení o svých zkušenostech (s přáteli, terapeutem, komunitou) snižuje pocit
+                  izolace.
+                </li>
+              </ul>
+            </ToggledContent>
             <Note>
-              <strong>Co si odnést</strong>: Zůstat silný neznamená
-              necítit bolest. Znamená to umět jít dál, i
-              když ji cítíš.
+              <strong>Co si odnést</strong>: Zůstat silný neznamená necítit bolest. Znamená to umět jít dál, i když ji
+              cítíš.
             </Note>
             <Note>
-              <strong>Užitečné kontakty:</strong><br/>
-              Linka bezpečí: <strong>116 111</strong> (děti a mládež)<br/>
+              <strong>Užitečné kontakty:</strong><br />
+              Linka bezpečí: <strong>116 111</strong> (děti a mládež)<br />
               Linka pro rodinu: <strong>116 000</strong>
             </Note>
           </div>
         </SupportBox>
-        <SupportBox headline="Praktické kroky pro vyrovnání se s těžkými situacemi" description="Těžké životní chvíle mohou přijít nečekaně – nemoc, ztráta blízkého, rozpad vztahu, finanční krize. Není možné se na ně vždy připravit, ale lze se naučit, jak jimi projít bez úplného vyčerpání." image="/img/support-3.webp">
-          <div class="flex flex-col gap-2">
+        <SupportBox
+          headline='Praktické kroky pro vyrovnání se s těžkými situacemi'
+          description='Těžké životní chvíle mohou přijít nečekaně – nemoc, ztráta blízkého, rozpad vztahu, finanční krize. Není možné se na ně vždy připravit, ale lze se naučit, jak jimi projít bez úplného vyčerpání.'
+          image='/img/support-3.webp'
+        >
+          <div class='flex flex-col gap-2'>
+            <ToggledContent label='Praktické kroky' id='step3'>
+              <ul>
+                <li><strong>Přijmi realitu situace</strong> – pojmenování toho, co se stalo, je prvním krokem k uzdravení.</li>
+                <li><strong>Vyhledej podporu</strong> – rodina, přátelé, terapeut, podpůrné skupiny. Nečekej, až tě přemůže samota.</li>
+                <li>
+                  <strong>Vytvoř si nouzový plán</strong> – napiš si seznam nejdůležitějších věcí, které je potřeba vyřešit (úřady,
+                  finance, péče o děti).
+                </li>
+                <li>
+                  <strong>Dbej na základní potřeby</strong> – spánek, jídlo, pitný režim, pohyb. Tělo i mysl potřebují energii k
+                  zotavení.
+                </li>
+                <li>
+                  <strong>Rozděl si cíle na malé kroky</strong> – místo „vyřeším všechno" si dej „dnes udělám jednu konkrétní věc".
+                </li>
+                <li><strong>Buď k sobě laskavý</strong> – nehledej dokonalost, dovol si i dny, kdy nezvládneš nic navíc.</li>
+              </ul>
+            </ToggledContent>
             <Note>
-              <strong>Co si odnést</strong>: Vyrovnat se s těžkou situací
-              je proces, ne jednorázové rozhodnutí.
-              Každý malý krok vpřed je vítězství.
+              <strong>Co si odnést</strong>: Vyrovnat se s těžkou situací je proces, ne jednorázové rozhodnutí. Každý
+              malý krok vpřed je vítězství.
             </Note>
             <Note>
-              <strong>V akutní krizi:</strong><br/>
-              <strong>116 123</strong> (Linka první psychické pomoci)<br/>
+              <strong>V akutní krizi:</strong><br />
+              <strong>116 123</strong> (Linka první psychické pomoci)<br />
               <strong>155 / 112</strong> (v ohrožení života)
             </Note>
           </div>
@@ -211,14 +272,23 @@ const steps = await getCollection('steps')
     </Content>
     <Content bg='white'>
       <H2>Co čtenáři říkají o knize</H2>
-      <Text class="pb-4">
+      <Text class='pb-4'>
         Názory čtenářů jsou pro nás velmi cenné. Zde si můžete přečíst, jak kniha pomohla ostatním a jaký dopad měla na
         jejich životy.
       </Text>
       <div class='grid grid-cols-1 md:grid-cols-3 gap-4'>
-        <RatingBox rating='"Tato kniha se mě hluboce dotkla. Není to jen příběh, ale průvodce pro každého, kdo čelí nejtěžším životním chvílím."' author="Anna K." />
-        <RatingBox rating='"Praktické nástroje v této knize mi pomohly navigovat vlastním obtížným obdobím. Vřele doporučím."' author="Petr M." />
-        <RatingBox rating='"Krásné svědectví o síle lásky a odolnosti. Tato kniha ve mně zůstane navždy."' author="Lucie S." />
+        <RatingBox
+          rating='"Tato kniha se mě hluboce dotkla. Není to jen příběh, ale průvodce pro každého, kdo čelí nejtěžším životním chvílím."'
+          author='Anna K.'
+        />
+        <RatingBox
+          rating='"Praktické nástroje v této knize mi pomohly navigovat vlastním obtížným obdobím. Vřele doporučím."'
+          author='Petr M.'
+        />
+        <RatingBox
+          rating='"Krásné svědectví o síle lásky a odolnosti. Tato kniha ve mně zůstane navždy."'
+          author='Lucie S.'
+        />
       </div>
     </Content>¨
     <Content bg='light'>
