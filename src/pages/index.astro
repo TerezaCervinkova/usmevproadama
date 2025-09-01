@@ -16,6 +16,7 @@ import RatingBox from '../components/RatingBox.astro'
 import Step from '../components/Step.astro'
 import Note from '../components/Note.astro'
 import ToggledContent from '../components/ToggledContent.astro'
+import PrintBox from '../components/PrintBox.astro'
 
 const steps = await getCollection('steps')
 ---
@@ -150,6 +151,23 @@ const steps = await getCollection('steps')
           </Li>
         </ol>
       </Box>
+      <Box class="mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-0 md:gap-8">
+          <div>
+            <Text class="text-left"><strong>Kniha zdarma</strong> díky podpoře partnerů</Text>
+            <Text class="text-sm text-left  text-secondary">
+              Kniha byla vytvořena s podporou <a href="https://www.nadaceepg.cz/s/" class="underline" target="_blank">Nadace EP Corporate Group</a>, která se zabývá pomocí pozůstalým rodinám a seniorům v nouzi, a <a class="underline" href="https://www.hlavacek-krampera.cz/">Advokátní Kanceláře Hlaváček&Krampera</a>, renomovanou společností, která Adama zastupovala při pozůstalostním řízení.
+            </Text>
+          </div>
+          <div class="self-center grid grid-cols-2 w-full px-4 gap-4 items-center mb-4 mb:mb-0">
+            <img src="/img/nadace.png" alt="Nadace EP Group" class="max-w-[100px]" />
+            <img src="/img/advokatni-kancelar.png" alt="Advokátní kancelář Hlaváček&Krampera" class="max-w-[100px]" />
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <LinkButton href='/xxx' theme='primary' class='head-button'>Získat bezplatný výtisk</LinkButton>
+        </div>
+      </Box>
     </Content>
     <Content bg='white'>
       <H2>Kroky po úmrtí blízkého</H2>
@@ -175,8 +193,12 @@ const steps = await getCollection('steps')
           <div class='flex flex-col gap-2'>
             <ToggledContent label='Praktické metody' id='step1'>
               <ul>
-                <li><strong>Denní záznam myšlenek a pocitů</strong> – zapisuj si ráno nebo večer, co se ti honí hlavou. Pomáhá to vyčistit mysl a odhalit vzorce chování.</li>
-                <li><strong>Technika „STOP"</strong> – kdykoliv cítíš, že tě ovládá stres:
+                <li>
+                  <strong>Denní záznam myšlenek a pocitů</strong> – zapisuj si ráno nebo večer, co se ti honí hlavou. Pomáhá
+                  to vyčistit mysl a odhalit vzorce chování.
+                </li>
+                <li>
+                  <strong>Technika „STOP"</strong> – kdykoliv cítíš, že tě ovládá stres:
                   <ul>
                     <li>S – Zastav se.</li>
                     <li>T – Tři hluboké nádechy.</li>
@@ -184,8 +206,13 @@ const steps = await getCollection('steps')
                     <li>P – Pokračuj s novým nastavením.</li>
                   </ul>
                 </li>
-                <li><strong>Reflexe otázek</strong>– polož si otázky: „Co je pro mě teď nejdůležitější?", „Co v této situaci opravdu ovlivním?"</li>
-                <li><strong>Mindfulness pro začátečníky</strong> – věnuj 5 minut denně vnímání dechu, těla a okolí bez hodnocení.</li>
+                <li>
+                  <strong>Reflexe otázek</strong>– polož si otázky: „Co je pro mě teď nejdůležitější?", „Co v této
+                  situaci opravdu ovlivním?"
+                </li>
+                <li>
+                  <strong>Mindfulness pro začátečníky</strong> – věnuj 5 minut denně vnímání dechu, těla a okolí bez hodnocení.
+                </li>
                 <li><strong>Tělesná aktivita</strong> – i krátká procházka nebo strečink zklidní tělo a tím i mysl.</li>
               </ul>
             </ToggledContent>
@@ -209,16 +236,19 @@ const steps = await getCollection('steps')
               <ul>
                 <li><strong>Malé denní cíle</strong> – zaměř se na to, co je zvládnutelné dnes, ne na celý život.</li>
                 <li>
-                  <strong>Opěrné body</strong> – lidé, místa nebo rituály, které ti dodávají jistotu (např. oblíbená kavárna, telefonát s
-                  blízkým).
-                </li>
-                <li><strong>Pozitivní kotvy</strong> – vědomě si připomínej tři věci, za které jsi vděčný, každý den.</li>
-                <li>
-                  <strong>Uvolňovací techniky</strong> – hudba, malování, zahradničení, modlitba – cokoliv, co ti pomáhá „vypnout hlavu".
+                  <strong>Opěrné body</strong> – lidé, místa nebo rituály, které ti dodávají jistotu (např. oblíbená kavárna,
+                  telefonát s blízkým).
                 </li>
                 <li>
-                  <strong>Sdílení příběhu</strong> – mluvení o svých zkušenostech (s přáteli, terapeutem, komunitou) snižuje pocit
-                  izolace.
+                  <strong>Pozitivní kotvy</strong> – vědomě si připomínej tři věci, za které jsi vděčný, každý den.
+                </li>
+                <li>
+                  <strong>Uvolňovací techniky</strong> – hudba, malování, zahradničení, modlitba – cokoliv, co ti pomáhá
+                  „vypnout hlavu".
+                </li>
+                <li>
+                  <strong>Sdílení příběhu</strong> – mluvení o svých zkušenostech (s přáteli, terapeutem, komunitou) snižuje
+                  pocit izolace.
                 </li>
               </ul>
             </ToggledContent>
@@ -241,20 +271,28 @@ const steps = await getCollection('steps')
           <div class='flex flex-col gap-2'>
             <ToggledContent label='Praktické kroky' id='step3'>
               <ul>
-                <li><strong>Přijmi realitu situace</strong> – pojmenování toho, co se stalo, je prvním krokem k uzdravení.</li>
-                <li><strong>Vyhledej podporu</strong> – rodina, přátelé, terapeut, podpůrné skupiny. Nečekej, až tě přemůže samota.</li>
                 <li>
-                  <strong>Vytvoř si nouzový plán</strong> – napiš si seznam nejdůležitějších věcí, které je potřeba vyřešit (úřady,
-                  finance, péče o děti).
+                  <strong>Přijmi realitu situace</strong> – pojmenování toho, co se stalo, je prvním krokem k uzdravení.
                 </li>
                 <li>
-                  <strong>Dbej na základní potřeby</strong> – spánek, jídlo, pitný režim, pohyb. Tělo i mysl potřebují energii k
-                  zotavení.
+                  <strong>Vyhledej podporu</strong> – rodina, přátelé, terapeut, podpůrné skupiny. Nečekej, až tě přemůže
+                  samota.
                 </li>
                 <li>
-                  <strong>Rozděl si cíle na malé kroky</strong> – místo „vyřeším všechno" si dej „dnes udělám jednu konkrétní věc".
+                  <strong>Vytvoř si nouzový plán</strong> – napiš si seznam nejdůležitějších věcí, které je potřeba vyřešit
+                  (úřady, finance, péče o děti).
                 </li>
-                <li><strong>Buď k sobě laskavý</strong> – nehledej dokonalost, dovol si i dny, kdy nezvládneš nic navíc.</li>
+                <li>
+                  <strong>Dbej na základní potřeby</strong> – spánek, jídlo, pitný režim, pohyb. Tělo i mysl potřebují energii
+                  k zotavení.
+                </li>
+                <li>
+                  <strong>Rozděl si cíle na malé kroky</strong> – místo „vyřeším všechno" si dej „dnes udělám jednu konkrétní
+                  věc".
+                </li>
+                <li>
+                  <strong>Buď k sobě laskavý</strong> – nehledej dokonalost, dovol si i dny, kdy nezvládneš nic navíc.
+                </li>
               </ul>
             </ToggledContent>
             <Note>
@@ -293,10 +331,38 @@ const steps = await getCollection('steps')
     </Content>¨
     <Content bg='light'>
       <H2>Získejte svůj výtisk</H2>
-      <Text>
+      <Text class="pb-4">
         Tato kniha je dostupná zdarma díky podpoře nadace EPCG. Pro získání bezplatného výtisku nám jednoduše napište na
         Instagram nebo na <TextLink href='mailto:autor@usmevproadama.cz'>autor@usmevproadama.cz</TextLink>
       </Text>
+      <div class='grid grid-cols-1 md:grid-cols-2 gap-4'>
+        <PrintBox
+          headline='@usmevproadama'
+          note='Sledujte náš příběh'
+          alt='Instagram'
+          icon='/icons/instagram.svg'
+          link='aaa'
+          linkLabel='Napsat na Instagram'
+        >
+          <ul class="list-disc ml-4">
+            <li>Pošlete nám zprávu a získejte knihu zdarma.</li>
+            <li>Zaujal vás náš příběh a chcete se podělit o ten svůj?</li>
+            <li>Jsme tu pro vás. Pojďme se vzájemně podpořit.</li>
+          </ul>
+        </PrintBox>
+        <PrintBox
+          headline='autor@usmevproadama.cz'
+          note='Spojte se s námi'
+          alt='E-mail'
+          icon='/icons/mail.svg'
+          link='mailto:xxx'
+          linkLabel='Napište nám'
+        >
+          <ul class="list-disc ml-4">
+            <li>Máte dotaz nebo chcete sdílet svůj příběh?</li>
+          </ul>
+        </PrintBox>
+      </div>
     </Content>
   </main>
 </Layout>
