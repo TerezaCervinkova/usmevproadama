@@ -5,6 +5,7 @@ import Content from '../../components/Content.astro'
 import H1 from '../../components/H1.astro'
 import Box from '../../components/Box.astro'
 import Text from '../../components/Text.astro'
+import Backlink from '../../components/Backlink.astro'
 
 export async function getStaticPaths() {
   const steps = await getCollection('steps')
@@ -22,11 +23,7 @@ const { Content: RenderedContent } = await render(step)
 <Layout>
   <main>
     <Content bg="light">
-      <nav class="mb-4">
-        <a href="/" class="text-secondary underline flex gap-1 items-center">
-          <img src="/icons/arrow-left.svg" alt="" /> Zpět na hlavní stránku
-        </a>
-      </nav>
+      <Backlink />
       <H1 class='text-3xl'>{step.data.title}</H1>
       <div class='md-content pb-16 md-content'>
         <RenderedContent />

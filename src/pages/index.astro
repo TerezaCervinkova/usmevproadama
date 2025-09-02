@@ -36,7 +36,7 @@ const steps = await getCollection('steps')
             <LinkButton href='/xxx' theme='primary' class='head-button'>Získat bezplatný výtisk</LinkButton>
             <LinkButton href='/asds' theme='outline'>Číst ukázku</LinkButton>
           </div>
-          <Text class="text-left">Přišel vám od nás výtisk do rukou? Budeme rádi, když nám pomůžete dostat téma k dalším lidem. Více informací naleznete <a href="asda" class="underline">zde</a>.</Text>
+          <Text class="text-left">Přišel vám od nás výtisk do rukou? Budeme rádi, když nám pomůžete dostat téma k dalším lidem. Více informací naleznete <a href="/podporovatele" class="underline"><strong>zde</strong></a>.</Text>
         </div>
         <div class='bg-[#F9EDE0] p-2 rounded-md w-full md:w-max m-auto'>
           <Box class='inline-block p-3'>
@@ -192,6 +192,14 @@ const steps = await getCollection('steps')
           image='/img/support-1.webp'
         >
           <div class='flex flex-col gap-2'>
+            <Note>
+              <strong>Co si odnést</strong>: Sebereflexe není o hledání chyb, ale o nacházení cesty k sobě. Čím víc ji
+              trénuješ, tím snáz zvládáš stres a těžké chvíle.
+            </Note>
+            <Note>
+              <strong>Užitečné kontakty:</strong><br />
+              Linka první psychické pomoci: <strong>116 123</strong> (zdarma, nonstop)
+            </Note>
             <ToggledContent label='Praktické metody' id='step1'>
               <ul>
                 <li>
@@ -217,14 +225,6 @@ const steps = await getCollection('steps')
                 <li><strong>Tělesná aktivita</strong> – i krátká procházka nebo strečink zklidní tělo a tím i mysl.</li>
               </ul>
             </ToggledContent>
-            <Note>
-              <strong>Co si odnést</strong>: Sebereflexe není o hledání chyb, ale o nacházení cesty k sobě. Čím víc ji
-              trénuješ, tím snáz zvládáš stres a těžké chvíle.
-            </Note>
-            <Note>
-              <strong>Užitečné kontakty:</strong><br />
-              Linka první psychické pomoci: <strong>116 123</strong> (zdarma, nonstop)
-            </Note>
           </div>
         </SupportBox>
         <SupportBox
@@ -233,6 +233,15 @@ const steps = await getCollection('steps')
           image='/img/support-2.webp'
         >
           <div class='flex flex-col gap-2'>
+            <Note>
+              <strong>Co si odnést</strong>: Zůstat silný neznamená necítit bolest. Znamená to umět jít dál, i když ji
+              cítíš.
+            </Note>
+            <Note>
+              <strong>Užitečné kontakty:</strong><br />
+              Linka bezpečí: <strong>116 111</strong> (děti a mládež)<br />
+              Linka pro rodinu: <strong>116 000</strong>
+            </Note>
             <ToggledContent label='Techniky pro udržení vnitřní síly' id='step2'>
               <ul>
                 <li><strong>Malé denní cíle</strong> – zaměř se na to, co je zvládnutelné dnes, ne na celý život.</li>
@@ -253,15 +262,6 @@ const steps = await getCollection('steps')
                 </li>
               </ul>
             </ToggledContent>
-            <Note>
-              <strong>Co si odnést</strong>: Zůstat silný neznamená necítit bolest. Znamená to umět jít dál, i když ji
-              cítíš.
-            </Note>
-            <Note>
-              <strong>Užitečné kontakty:</strong><br />
-              Linka bezpečí: <strong>116 111</strong> (děti a mládež)<br />
-              Linka pro rodinu: <strong>116 000</strong>
-            </Note>
           </div>
         </SupportBox>
         <SupportBox
@@ -270,6 +270,15 @@ const steps = await getCollection('steps')
           image='/img/support-3.webp'
         >
           <div class='flex flex-col gap-2'>
+            <Note>
+              <strong>Co si odnést</strong>: Vyrovnat se s těžkou situací je proces, ne jednorázové rozhodnutí. Každý
+              malý krok vpřed je vítězství.
+            </Note>
+            <Note>
+              <strong>V akutní krizi:</strong><br />
+              <strong>116 123</strong> (Linka první psychické pomoci)<br />
+              <strong>155 / 112</strong> (v ohrožení života)
+            </Note>
             <ToggledContent label='Praktické kroky' id='step3'>
               <ul>
                 <li>
@@ -296,15 +305,6 @@ const steps = await getCollection('steps')
                 </li>
               </ul>
             </ToggledContent>
-            <Note>
-              <strong>Co si odnést</strong>: Vyrovnat se s těžkou situací je proces, ne jednorázové rozhodnutí. Každý
-              malý krok vpřed je vítězství.
-            </Note>
-            <Note>
-              <strong>V akutní krizi:</strong><br />
-              <strong>116 123</strong> (Linka první psychické pomoci)<br />
-              <strong>155 / 112</strong> (v ohrožení života)
-            </Note>
           </div>
         </SupportBox>
       </div>

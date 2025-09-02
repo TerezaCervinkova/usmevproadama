@@ -1,0 +1,60 @@
+---
+
+import Layout from '../layouts/Layout.astro'
+import Content from '../components/Content.astro'
+import Text from '../components/Text.astro'
+import H2 from '../components/H2.astro'
+import H3 from '../components/H3.astro'
+import Backlink from '../components/Backlink.astro'
+---
+
+<Layout>
+  <main>
+    <Content bg="light">
+      <Backlink />
+      <H2 class="text-left">Jak můžete ze své pozice pomoci</H2>
+      <ol class="ml-4 list-decimal text-dark">
+        <li>
+          Předat knihu kolegům či oddělením, která se ve Vašem kraji setkávají s pozůstalými
+          – ať už jde o krizová centra, urgentní příjem, sociální pracovníky nebo policisty.
+        </li>
+        <li>
+          Umístit či předat přiložený leták – je stručný, přehledný, s QR kódem a odkazem
+          na webové stránky, kde pozůstalí najdou další podporu zdarma.
+        </li>
+        <li>
+          Sdílet přímo webové stránky na Vašem webu – můžete umístit odkaz přímo na
+          naše webové stránky, kde si mohou pozůstalí najít potřebné rady
+        </li>
+      </ol>
+    </Content>
+    <Content bg="white">
+      <H3 class="text-left"> Proč věřím, že to má smysl</H3>
+        <ul class="list-disc ml-4 text-dark mb-6">
+          <li>
+            V krizových okamžicích často chybí čas a síla hledat pomoc.
+          </li>
+          <li>
+            Leták i kniha jsou koncipovány tak, aby se lidem dostaly včas, srozumitelně a v
+            klidu.
+          </li>
+          <li>
+            Vaše role v tomto procesu je nenahraditelná – právě Vy můžete být tím prvním
+            mostem k šíření pomoci.
+          </li>
+        </ul>
+
+      <Text class="text-left text-dark">Kniha je financována z prostředků nadace, není určena k prodeji – cílem je, aby se dostala
+      k těm, kdo ji potřebují a kdo mají tu možnost pomoct.
+      Na našich webových stránkách usmevproadama.cz naleznete digitální podobu letáku
+      s kroky pro čerstvě pozůstalé, který je možné distribuovat. Na webových stránkách lze také i
+      požádat o PDF verzi celé knihy a jsou zde k nalezení a ke stažení právní rady, které jsou
+      součástí knihy.
+      Budeme také rádi za Vaši fotografii s knihou, kterou bychom mohli sdílet na sociálních
+      sítích.
+      Pokud potřebujete poradit nebo pro nás máte nápady ke zlepšení pomoci, kontaktujte nás na
+        <a href="mailto:autor@usmevproadama.cz" class="underline">autor@usmevproadama.cz</a>.
+      </Text>
+    </Content>
+  </main>
+</Layout>
