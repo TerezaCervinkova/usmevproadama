@@ -1,10 +1,10 @@
 ---
 import { getCollection, render } from 'astro:content'
 import Layout from '../../layouts/Layout.astro'
-import Content from '../../components/Content.astro'
-import H1 from '../../components/H1.astro'
-import Box from '../../components/Box.astro'
-import Text from '../../components/Text.astro'
+import Content from '../../components/ui/Content.astro'
+import H1 from '../../components/ui/H1.astro'
+import Box from '../../components/ui/Box.astro'
+import Text from '../../components/ui/Text.astro'
 import Backlink from '../../components/Backlink.astro'
 
 export async function getStaticPaths() {
@@ -22,37 +22,37 @@ const { Content: RenderedContent } = await render(step)
 
 <Layout>
   <main>
-    <Content bg="light">
+    <Content bg='light'>
       <Backlink />
       <H1 class='text-3xl'>{step.data.title}</H1>
       <div class='md-content pb-16 md-content'>
         <RenderedContent />
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <Box class="shadow-none flex flex-col gap-2">
-          <div class="flex items-center gap-2 ">
-            <img src="/icons/phone.svg" alt="" class="w-[16px]" />
-            <h4 class="text-md font-semibold text-dark">Kde hledat pomoc</h4>
+      <div class='grid grid-cols-1 md:grid-cols-2 gap-4'>
+        <Box class='shadow-none flex flex-col gap-2'>
+          <div class='flex items-center gap-2'>
+            <img src='/icons/phone.svg' alt='' class='w-[16px]' />
+            <h4 class='text-md font-semibold text-dark'>Kde hledat pomoc</h4>
           </div>
           <div>
-            <strong class="text-sm mb-2">Občanské poradny</strong>
-            <Text class="text-left text-sm mb-1">Sociální a právní poradenství</Text>
-            <Text class="text-left text-sm mb-0">Asociace občanských poraden | tel. 222 212 698</Text>
+            <strong class='text-sm mb-2'>Občanské poradny</strong>
+            <Text class='text-left text-sm mb-1'>Sociální a právní poradenství</Text>
+            <Text class='text-left text-sm mb-0'>Asociace občanských poraden | tel. 222 212 698</Text>
           </div>
           <div>
-            <strong class="text-sm mb-2">Linky důvěry</strong>
-            <Text class="text-left text-sm mb-1">Psychická podpora v krizi</Text>
-            <Text class="text-left text-sm mb-0">Seznam na <a href="www.capld.cz">www.capld.cz</a></Text>
+            <strong class='text-sm mb-2'>Linky důvěry</strong>
+            <Text class='text-left text-sm mb-1'>Psychická podpora v krizi</Text>
+            <Text class='text-left text-sm mb-0'>Seznam na <a href='www.capld.cz'>www.capld.cz</a></Text>
           </div>
         </Box>
-        <Box class="shadow-none bg-[#FDF8F0] flex flex-col gap-2">
-          <div class="flex items-center gap-2 ">
-            <img src="/icons/people.svg" alt="" class="w-[16px]" />
-            <h4 class="text-md font-semibold text-dark">Nezapomeňte</h4>
+        <Box class='shadow-none bg-[#FDF8F0] flex flex-col gap-2'>
+          <div class='flex items-center gap-2'>
+            <img src='/icons/people.svg' alt='' class='w-[16px]' />
+            <h4 class='text-md font-semibold text-dark'>Nezapomeňte</h4>
           </div>
-          <Text class="text-sm text-left">
-            V tom nejhorším nejste sami. Nebojte se požádat o pomoc – od rodiny, přátel nebo
-            profesionálů. Pomalu, krok za krokem, všechno zvládnete.
+          <Text class='text-sm text-left'>
+            V tom nejhorším nejste sami. Nebojte se požádat o pomoc – od rodiny, přátel nebo profesionálů. Pomalu, krok
+            za krokem, všechno zvládnete.
           </Text>
         </Box>
       </div>

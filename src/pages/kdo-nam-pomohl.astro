@@ -1,0 +1,64 @@
+---
+import Backlink from '../components/Backlink.astro'
+import Layout from '../layouts/Layout.astro'
+import Content from '../components/ui/Content.astro'
+import H2 from '../components/ui/H2.astro'
+import Box from '../components/ui/Box.astro'
+import Text from '../components/ui/Text.astro'
+import HelpBox from '../components/HelpBox.astro'
+---
+
+<Layout>
+  <main>
+    <Content bg='light'>
+      <Backlink />
+      <H2 class='text-left'>Kde jsme s Adamem našli finanční pomoc, kterou jsme neměli od státu?</H2>
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-4 mb-8'>
+        <HelpBox
+          label='Nadace EPCG'
+          link='https://www.nadaceepcg.cz/s/'
+          note="Nadace nabízí několik grantů na bázi měsíčních příspěvků pro pozůstalé rodiny, osiřelé děti nebo pozůstalé handicapované děti."
+          logo='/img/nadace.png'
+        />
+        <HelpBox
+          label='Donio.cz'
+          link='https://www.donio.cz/'
+          note="Na Donio si můžete požádat o založení veřejné sbírky ve vážných existenčních případech."
+          logo='/img/donio.svg'
+        />
+        <HelpBox
+          label='Nadace Dobrý Anděl'
+          link='https://www.dobryandel.cz'
+          note="Dobrý Anděl nám pomáhá již od pobytu v nemocnici a díky všem andělům jsme schopni držet se na nohou i se všemi finančními výdaji."
+          logo='/img/dobry-andel.png'
+        />
+      </div>
+      <Box>
+        Od státu můžete mít nárok mimo pozůstalostních důchodů (za předpokladu plnění podmínek pro jejich získání) i na
+        třeba:
+        <ol class='list-decimal ml-8 mt-4'>
+          <li>
+            dlouhodobé ošetřování člena rodiny (<a href='https://www.cssz.cz/dlouhodobe-osetrovne' class='underline'
+              >https://www.cssz.cz/dlouhodobe-osetrovne</a
+            >)
+          </li>
+          <li>
+            příspěvek na péči (<a href='https://www.uradprace.cz/prispevek-na-peci' class='underline'
+              >https://www.uradprace.cz/prispevek-na-peci</a
+            >)
+          </li>
+          <li>
+            příspěvek na bydlení (<a href='https://www.mpsv.cz/prispevek-na-bydleni' class='underline'
+              >https://www.mpsv.cz/prispevek-na-bydleni</a
+            >)
+          </li>
+          <li>
+            přídavek na dítě (<a href='https://www.mpsv.cz/pridavek-na-dite' class='underline'
+              >https://www.mpsv.cz/pridavek-na-dite</a
+            >)
+          </li>
+        </ol>
+      </Box>
+    </Content>
+  </main>
+</Layout>

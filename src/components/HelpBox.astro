@@ -1,0 +1,25 @@
+---
+import Text from './ui/Text.astro'
+import Box from './ui/Box.astro'
+
+interface Props {
+  link: string
+  logo: string
+  label: string
+  note: string
+}
+
+const { link, logo, label, note } = Astro.props
+---
+
+<Box class='grid grid-rows-[70px_auto_1fr] gap-4'>
+  <div class="flex justify-center w-full items-center">
+    <a href={link} class='underline'>
+      <img class='w-[120px]' src={logo} alt={label} />
+    </a>
+  </div>
+  <a href={link} class='underline'><strong>{label}</strong></a>
+  <Text class='text-left mb-0'>
+    {note}
+  </Text>
+</Box>

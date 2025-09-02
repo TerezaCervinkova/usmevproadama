@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css'
-import Content from '../components/Content.astro'
+import Content from '../components/ui/Content.astro'
 ---
 
 <!doctype html>
@@ -19,13 +19,17 @@ import Content from '../components/Content.astro'
     <title>Úsměv pro Adama</title>
   </head>
   <body>
-    <div class="layout">
+    <div class='layout'>
       <slot />
-      <footer class="text-center">
-        <Content bg="dark">
-          <strong class="inline-block text-lg mb-2">Úsměv pro Adama</strong>
-          <p class="text-tertiary pb-6 border-b border-[#A25D32]">Příběh naděje, síly a pomoci. Kniha zdarma díky podpoře nadace EPCG.</p>
-          <p class="text-sm pt-6 text-[#E8BE94]">© {new Date().getFullYear()} Úsměv pro Adama. Všechna práva vyhrazena.</p>
+      <footer class='text-center'>
+        <Content bg='dark'>
+          <strong class='inline-block text-lg mb-2'>Úsměv pro Adama</strong>
+          <p class='text-tertiary pb-6 border-b border-[#A25D32]'>
+            Příběh naděje, síly a pomoci. Kniha zdarma díky podpoře nadace EPCG.
+          </p>
+          <p class='text-sm pt-6 text-[#E8BE94]'>
+            © {new Date().getFullYear()} Úsměv pro Adama. Všechna práva vyhrazena.
+          </p>
         </Content>
       </footer>
     </div>

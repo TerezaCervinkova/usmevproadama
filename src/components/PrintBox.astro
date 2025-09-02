@@ -1,8 +1,8 @@
 ---
-import Box from './Box.astro'
-import Text from './Text.astro'
-import TextLink from './TextLink.astro'
-import LinkButton from './LinkButton.astro'
+import Box from './ui/Box.astro'
+import Text from './ui/Text.astro'
+import TextLink from './ui/TextLink.astro'
+import LinkButton from './ui/LinkButton.astro'
 interface Props {
   headline: string
   note: string
@@ -16,19 +16,20 @@ const { headline, note, icon, alt, link, linkLabel } = Astro.props
 ---
 
 <Box>
-  <div class="grid grid-rows-[auto_1fr_auto] h-full">
-    <div class="flex justify-start items-center gap-4">
-      <div class="bg-secondary rounded-md place-items-center p-2"><img class="rounded-md min-w-[24px] w-[24px]" src={icon} alt={alt} /></div>
-      <div class="flex flex-col items-start">
-        <strong class="text-secondary text-md">{headline}</strong>
-        <Text class="mb-0 text-sm">{note}</Text>
+  <div class='grid grid-rows-[auto_1fr_auto] h-full'>
+    <div class='flex justify-start items-center gap-4'>
+      <div class='bg-secondary rounded-md place-items-center p-2'>
+        <img class='rounded-md min-w-[24px] w-[24px]' src={icon} alt={alt} />
+      </div>
+      <div class='flex flex-col items-start'>
+        <strong class='text-secondary text-md'>{headline}</strong>
+        <Text class='mb-0 text-sm'>{note}</Text>
       </div>
     </div>
-    <div class="text-sm my-4"><slot /></div>
-    <LinkButton theme="primary" href={link} class="flex items-center gap-2 justify-center">
-      <img class="w-[16px]" src={icon} alt={alt} />
+    <div class='text-sm my-4'><slot /></div>
+    <LinkButton theme='primary' href={link} class='flex items-center gap-2 justify-center'>
+      <img class='w-[16px]' src={icon} alt={alt} />
       <span>{linkLabel}</span>
     </LinkButton>
   </div>
 </Box>
-

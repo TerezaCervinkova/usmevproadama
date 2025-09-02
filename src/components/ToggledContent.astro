@@ -6,14 +6,14 @@ interface Props {
 
 const { label, id } = Astro.props
 ---
-<div id={id} class="toggle-content" data-visible='false'>
-  <div class='flex justify-between items-center pb-2'>
+<div id={id} class="toggle-content bg-light rounded-sm" data-visible='false'>
+  <div class='flex justify-between items-center pb-2 bg-light rounded-sm p-2 text-sm'>
     <p class="text-sm font-semibold">{label}</p>
     <button id="arrow-button" type='button' class="w-[14px] cursor-pointer">
       <img src="/icons/arrow-down.svg" alt="" />
     </button>
   </div>
-  <div class='border-l border-secondary mb-2 px-4 toggle-content__slot' data-content >
+  <div class='pt-2 px-4 pb-4 toggle-content__slot border-t border-t-secondary/10' data-content >
     <slot />
   </div>
 </div>
