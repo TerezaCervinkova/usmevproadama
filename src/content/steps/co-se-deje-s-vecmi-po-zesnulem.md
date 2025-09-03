@@ -6,11 +6,6 @@ order: 2
 preview: Zdravotnická dokumentace, věci ze zařízení a možnosti stížností. 
 ---
 
-## První kroky v těžké chvíli ##
-
-Ztráta blízkého člověka je jedním z nejtěžších životních okamžiků. V takové chvíli je těžké myslet na praktické záležitosti, které je ale brzy nutné řešit. Proto jsme pro vás připravili přehled toho
-nejdůležitějšího, co je třeba zařídit po úmrtí partnera, rodiče nebo jiného blízkého člověka.
-
 1. ### ![](/icons/note.svg)  Věci ze zdravotnického zařízení ###
     Pokud váš blízký zemřel v nemocnici nebo domově pro seniory, pracovníci zařízení vás obvykle sami kontaktují a informují, jaké věci po něm zůstaly.
       - Cennosti (např. šperky, peníze) zůstávají uschovány, dokud notář nerozhodne, komu je předat.

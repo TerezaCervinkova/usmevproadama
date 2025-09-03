@@ -10,44 +10,55 @@ preview: Závěti, spory mezi dědici, vydědění a kdy kontaktovat právníka.
 
 Většina dědických řízení je jednoduchá – dědí manžel(ka) a děti, majetek se rozdělí spravedlivě nebo podle dohody a vše vyřeší notář během jednoho či dvou setkání. Ale někdy nastanou složitější situace – různé závěti, spory mezi dědici, nejasnosti, dluhy, firmy či nemovitosti v zahraničí. V takových případech se vyplatí obrátit na právníka.
 
-1. ### ![](/icons/note.svg)  Lékař a List o prohlídce zemřelého ###
-   Pokud ke smrti došlo v nemocnici nebo domově seniorů, lékař kontaktuje rodinu a vystaví potřebný dokument – tzv. List o prohlídce zemřelého.
+1. ### ![](/icons/note.svg)  Jak lze dědit? ###
+   Dědění ze zákona (nejčastější)
+    - Dědí nejbližší příbuzní podle tzv. dědických tříd. 
+    - První třída: děti + manžel/manželka (rovným dílem).
+    - Pokud nejsou děti, nastupují rodiče, sourozenci atd.
+   
+   <br/>Dědění ze závěti
+    - Zůstavitel může rozdělit majetek podle své vůle.
+    - Může určit dědice, odkázat jednotlivé věci (např. motorku příteli).
+    - Musí respektovat tzv. nepominutelné dědice – většinou děti.
 
-   > Pokud člověk zemřel doma nebo mimo zařízení, volejte Záchrannou službu (155 nebo 112). Lékař provede prohlídku těla a rozhodne o pitvě.
+   <br/>Závěť může být sepsaná vlastní rukou, u notáře, nebo s dvěma svědky. Doporučujeme uložit ji do Centrální evidence závětí.
 
-   Tento list je základem pro vystavení úmrtního listu a zajištění pohřbu.
-2. ### ![](/icons/note.svg) Hřbitov a pohřeb ###
-   Pohřební služba vám pomůže se všemi formality.
+2. ### ![](/icons/note.svg) Vydědění a ztráta dědického práva ###
+   Zůstavitel může potomka vydědit, pokud:
+    - mu neposkytl pomoc,
+    - o něj nejevil zájem,
+    - byl odsouzen za závažný čin,
+    - žije nezřízeně (např. závislosti, násilí, neplacení výživného).
 
-   K vyřízení pohřbu budete potřebovat:
-    - svůj doklad totožnosti
-    - pokud je k dispozici: rodný a oddací list zesnulého
-    - oblečení pro zesnulého (bez bot)
-    - fotografii (na parte nebo do obřadní síně)
+   <br/>Vyděděný potomek se může bránit u soudu.
 
-3. ### ![](/icons/note.svg) Úmrtní list ###
-   Vystavuje ho matrika do 30 dnů od obdržení dokumentů od lékaře.
+   Zákon také vylučuje dědice, kteří:
+    - způsobili zůstaviteli nebo jeho blízkým újmu,
+    - zničili nebo zfalšovali závěť.
 
-   Můžete si ho vyzvednout osobně, nebo vám jej matrika zašle poštou.
+3. ### ![](/icons/note.svg) Co když je dědictví složité? ###
+   Může jít o firmu, složité závěti, závazky, dluhy nebo zahraniční majetek.
 
-   K vyzvednutí si připravte doklad totožnosti a ideálně doklad o příbuznosti.
+   V takových případech je vhodné poradit se s advokátem.
 
-4. ### ![](/icons/note.svg) Vrácení dokladů a oznámení úřadům ###
-   Vraťte občanský průkaz, pas a řidičský průkaz zesnulého na úřad.
+4. ### ![](/icons/note.svg) Můžu dědictví odmítnout? ###
+   Ano. Dědictví můžete:
+    - odmítnout – jako byste nikdy nedědili (pak dědí vaše děti),
+    - vzdát se ve prospěch jiného dědice (ten musí souhlasit),
+    - zříci se dědictví ještě za života zůstavitele (notářskou smlouvou).
 
-   Pokud zesnulý pobíral příspěvek na péči, informujte Úřad práce.
+   <br/>Pozor: Odmítnutí dědictví může napadnout věřitel, pokud se snažíte uniknout odpovědnosti.
 
-   Pokud vám zemřel manžel/manželka, zažádejte si do 60 dnů o nový občanský průkaz.
+5. ### ![](/icons/note.svg) Co dělat, když mám obavy z dluhů? ###
+   Požádejte o výhradu soupisu pozůstalosti – pak odpovídáte za dluhy jen do hodnoty dědictví.
 
-5. ### ![](/icons/note.svg) Smlouvy a služby ###
-   Oznámení úmrtí poskytovatelům energií, internetu, operátorům.
+   Soupis může být nahrazen i čestným prohlášením dědiců o majetku – ale nesmí být nepravdivé.
 
-   Můžete služby zrušit nebo přepsat na sebe.
+6. ### ![](/icons/note.svg) Správa pozůstalosti ###
+   Zůstavitel může ve své závěti určit správce pozůstalosti.
 
-   Zkontrolujte trvalé příkazy a pravidelné platby zesnulého.
-6. ### ![](/icons/note.svg) Přístup k bankovnímu účtu ###
-   Pokud měl někdo dispoziční právo k účtu, může s ním dočasně nakládat.
+   Může ho také jmenovat soud.
+   
+   Správce se stará o majetek až do konce dědického řízení.
 
-   Majetek ale náleží dědicům a bude vypořádán v rámci dědického řízení.
-7. ### ![](/icons/note.svg) Nárok na pohřebné ###
-   Pokud zemřel rodič nezaopatřeného dítěte nebo dítě samo, můžete požádat o jednorázovou dávku 5 000 Kč (pohřebné).
+   Využívá se zejména, pokud pozůstalost zahrnuje firmu, investice nebo složitý majetek.

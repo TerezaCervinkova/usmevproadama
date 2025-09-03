@@ -54,7 +54,7 @@ Ztráta blízkého v důsledku nehody, násilí nebo jiné cizí viny je velmi t
     - 200 000 Kč pro přímé příbuzné
     - 175 000 Kč pro sourozence
 
-   Kde žádat: Ministerstvo spravedlnosti (formulář na jejich webu)
+   <br/>Kde žádat: Ministerstvo spravedlnosti (formulář na jejich webu)
    
    Lhůta: do 2 let od chvíle, kdy jste se dozvěděli o újmě (max. 5 let od činu)
    
