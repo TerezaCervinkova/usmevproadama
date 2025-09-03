@@ -1,20 +1,19 @@
 ---
-title: Co dělat po úmrtí blízkého člověka-3
-slug: co-delat-po-umrti-blizkeho-cloveka-3
+title: Dědictví - složité situace
+slug: dedictvi-slozite-situace
 icoPath: /icons/check.svg
-order: 3
-preview: Ztráta blízkého člověka je jedním z nejtěžších životních okamžiků. V takové chvíli je těžké myslet na praktické záležitosti, které je ale brzy nutné řešit. 
+order: 6
+preview: Závěti, spory mezi dědici, vydědění a kdy kontaktovat právníka. 
 ---
 
-## První kroky v těžké chvíli ##
+## Co může nastat a kdy je třeba poradit se s právníkem? ##
 
-Ztráta blízkého člověka je jedním z nejtěžších životních okamžiků. V takové chvíli je těžké myslet na praktické záležitosti, které je ale brzy nutné řešit. Proto jsme pro vás připravili přehled toho
-nejdůležitějšího, co je třeba zařídit po úmrtí partnera, rodiče nebo jiného blízkého člověka.
+Většina dědických řízení je jednoduchá – dědí manžel(ka) a děti, majetek se rozdělí spravedlivě nebo podle dohody a vše vyřeší notář během jednoho či dvou setkání. Ale někdy nastanou složitější situace – různé závěti, spory mezi dědici, nejasnosti, dluhy, firmy či nemovitosti v zahraničí. V takových případech se vyplatí obrátit na právníka.
 
 1. ### ![](/icons/note.svg)  Lékař a List o prohlídce zemřelého ###
    Pokud ke smrti došlo v nemocnici nebo domově seniorů, lékař kontaktuje rodinu a vystaví potřebný dokument – tzv. List o prohlídce zemřelého.
 
-   Pokud člověk zemřel doma nebo mimo zařízení, volejte Záchrannou službu (155 nebo 112). Lékař provede prohlídku těla a rozhodne o pitvě.
+   > Pokud člověk zemřel doma nebo mimo zařízení, volejte Záchrannou službu (155 nebo 112). Lékař provede prohlídku těla a rozhodne o pitvě.
 
    Tento list je základem pro vystavení úmrtního listu a zajištění pohřbu.
 2. ### ![](/icons/note.svg) Hřbitov a pohřeb ###
