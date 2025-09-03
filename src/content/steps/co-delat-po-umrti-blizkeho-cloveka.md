@@ -1,15 +1,14 @@
 ---
-title: Co dělat po úmrtí blízkého člověka-2
-slug: co-delat-po-umrti-blizkeho-cloveka-2
+title: Co dělat po úmrtí blízkého člověka
+slug: co-delat-po-umrti-blizkeho-cloveka
 icoPath: /icons/check.svg
-order: 2
-preview: Ztráta blízkého člověka je jedním z nejtěžších životních okamžiků. V takové chvíli je těžké myslet na praktické záležitosti, které je ale brzy nutné řešit. 
+order: 1
+preview: První kroky v těžké chvíli - praktický průvodce nejdůležitějšími úkony. 
 ---
 
 ## První kroky v těžké chvíli ##
 
-Ztráta blízkého člověka je jedním z nejtěžších životních okamžiků. V takové chvíli je těžké myslet na praktické záležitosti, které je ale brzy nutné řešit. Proto jsme pro vás připravili přehled toho
-nejdůležitějšího, co je třeba zařídit po úmrtí partnera, rodiče nebo jiného blízkého člověka.
+Ztráta blízkého člověka je jedním z nejtěžších životních okamžiků. V takové chvíli je těžké myslet na praktické záležitosti, které je ale brzy nutné řešit. Proto jsme pro vás připravili přehled toho nejdůležitějšího, co je třeba zařídit po úmrtí partnera, rodiče nebo jiného blízkého člověka.
 
 1. ### ![](/icons/note.svg)  Lékař a List o prohlídce zemřelého ###
    Pokud ke smrti došlo v nemocnici nebo domově seniorů, lékař kontaktuje rodinu a vystaví potřebný dokument – tzv. List o prohlídce zemřelého.

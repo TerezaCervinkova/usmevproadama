@@ -1,17 +1,16 @@
 ---
-title: Co dělat po úmrtí blízkého člověka-4
-slug: co-delat-po-umrti-blizkeho-cloveka-4
+title: Pozůstalostní důchody
+slug: pozustalostni-duchody
 icoPath: /icons/check.svg
-order: 4
-preview: Ztráta blízkého člověka je jedním z nejtěžších životních okamžiků. V takové chvíli je těžké myslet na praktické záležitosti, které je ale brzy nutné řešit. 
+order: 7
+preview: Vdovský, vdovecký a sirotčí důchod - podmínky a postup žádosti. 
 ---
 
-## První kroky v těžké chvíli ##
+## Finanční pomoc po úmrtí##
 
-Ztráta blízkého člověka je jedním z nejtěžších životních okamžiků. V takové chvíli je těžké myslet na praktické záležitosti, které je ale brzy nutné řešit. Proto jsme pro vás připravili přehled toho
-nejdůležitějšího, co je třeba zařídit po úmrtí partnera, rodiče nebo jiného blízkého člověka.
+Pokud vám zemřel manžel/manželka nebo druhý rodič vašeho dítěte, může pro vás být situace nejen emočně, ale i finančně velmi náročná. Český stát v těchto případech poskytuje pozůstalostní důchody: vdovský / vdovecký důchod a sirotčí důchod.
 
-1. ### ![](/icons/note.svg)  Lékař a List o prohlídce zemřelého ###
+1. ### ![](/icons/note.svg)  Lékaři a List o prohlídce zemřelého ###
    Pokud ke smrti došlo v nemocnici nebo domově seniorů, lékař kontaktuje rodinu a vystaví potřebný dokument – tzv. List o prohlídce zemřelého.
 
    Pokud člověk zemřel doma nebo mimo zařízení, volejte Záchrannou službu (155 nebo 112). Lékař provede prohlídku těla a rozhodne o pitvě.
