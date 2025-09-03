@@ -134,3 +134,20 @@
     margin-left: 20px;
     @apply text-content-text text-sm;
 }
+
+.md-content blockquote {
+    @apply bg-light rounded-md p-2 text-xs text-left my-2;
+}
+
+.md-content table {
+    @apply text-dark text-left w-full rounded-md text-sm;
+}
+
+.md-content table th,td {
+    @apply text-left bg-light py-2 px-3;
+}
+
+
+.md-content table th {
+    @apply border-b border-b-dark/10;
+}
