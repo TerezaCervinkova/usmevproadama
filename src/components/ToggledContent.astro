@@ -9,7 +9,7 @@ const { label, id } = Astro.props
 <div id={id} class="toggle-content bg-light rounded-sm" data-visible='false'>
   <div class='flex justify-between items-center pb-2 bg-light rounded-sm p-2 text-sm'>
     <p class="text-sm font-semibold">{label}</p>
-    <button id="arrow-button" type='button' class="w-[14px] cursor-pointer">
+    <button id="arrow-button" type='button' class="w-[14px] cursor-pointer" aria-label="Otevřít/skrýt obsah">
       <img src="/icons/arrow-down.svg" alt="" />
     </button>
   </div>
