@@ -1,17 +1,17 @@
 ---
 title: Pozůstalostní důchody
 slug: pozustalostni-duchody
-icoPath: /icons/check.svg
+icoPath: /icons/duchody.svg
 order: 7
 preview: Vdovský, vdovecký a sirotčí důchod - podmínky a postup žádosti. 
 ---
 
 ## Finanční pomoc po úmrtí ##
 
-Pokud vám zemřel manžel/manželka nebo druhý rodič vašeho dítěte, může pro vás být situace nejen emočně, ale i finančně velmi náročná. Český stát v těchto případech poskytuje pozůstalostní důchody: vdovský / vdovecký důchod a sirotčí důchod.
+Pokud vám zemřel manžel/manželka nebo druhý rodič vašeho dítěte, může pro vás být situace nejen emočně, ale i finančně velmi náročná. Český stát v těchto případech poskytuje <b>pozůstalostní důchody: vdovský / vdovecký důchod a sirotčí důchod</b>.
 
 1. ### ![](/icons/note.svg)  Vdovský / vdovecký důchod ###
-   Tento důchod lze získat, pokud jste byli <b>manželé</b> nebo měli <b>registrované partnerství</b>. Druh a družka (ani se společnými dětmi) na něj nárok nemají.
+   Tento důchod lze získat, pokud jste byli <b>manželé</b> nebo měli <b>(registrované) partnerství</b>. Druh a družka (ani se společnými dětmi) na něj <b>nárok nemají</b>.
 
    <b>Kdy vzniká nárok:</b>
     - zemřelý pobíral starobní nebo invalidní důchod,
@@ -42,16 +42,16 @@ Pokud vám zemřel manžel/manželka nebo druhý rodič vašeho dítěte, může
    > Žádost <b>není automatická</b> – musíte si o důchod požádat.
 
    <br/><b>Co když nesouhlasíte s rozhodnutím ČSSZ?</b>
-    - Můžete podat námitky do 30 dnů.
-    - Pokud ČSSZ nevyhoví, lze podat žalobu k soudu.
+    - Můžete podat <b>námitky</b> do 30 dnů.
+    - Pokud ČSSZ nevyhoví, lze podat <b>žalobu k soudu</b>.
    
 2. ### ![](/icons/note.svg) Sirotčí důchod ###
    Nárok na něj má:
-    - <b>nezaopatřené dítě</b> do 26 let, pokud se připravuje na povolání nebo je zdravotně omezené
+    - <b>nezaopatřené dítě</b> do 26 let, pokud se připravuje studiem na povolání nebo je zdravotně omezené.
    
    <br/>Důchod se vyplácí po rodiči (nebo osvojiteli), který:
     - pobíral starobní/invalidní důchod,
-    - nebo zemřel na následky pracovního úrazu, 
+    - nebo zemřel na následky pracovnípnho úrazu, 
     - nebo byl po určitou dobu účasten důchodového pojištění.
 
    <br/><b>Výše důchodu:</b>

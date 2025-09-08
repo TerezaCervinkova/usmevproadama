@@ -1,42 +1,41 @@
 ---
 title: Daňové přiznání po úmrtí
 slug: danove-priznani-po-umrti
-icoPath: /icons/check.svg
+icoPath: /icons/dane.svg
 order: 4
 preview: Kdy a kdo musí podat daňové přiznání, lhůty a požadované dokumenty. 
 ---
 
 ## Kdy, kdo a co je potřeba? ##
 
-Smrt blízkého člověka s sebou může přinést i daňové povinnosti. Pokud zemřelý podával daňové přiznání, je třeba ho vyřídit za období od začátku roku do dne úmrtí. Zákonná lhůta je přísná – pouze 3 měsíce od úmrtí.
+Smrt blízkého člověka s sebou může přinést i daňové povinnosti. Pokud zemřelý podával daňové přiznání, je třeba ho vyřídit za období od začátku roku do dne úmrtí. Zákonná lhůta je přísná – <b>pouze 3 měsíce od úmrtí</b>.
 
 1. ### ![](/icons/note.svg)  Musí se vůbec podávat daňové přiznání? ###
    Ne vždy. Záleží na typu příjmů, které zesnulý měl.
 
-   Není třeba podávat přiznání, pokud:
-    - měl jen starobní důchod
-    - neměl žádné zdanitelné příjmy
-    - byl zaměstnanec s jedním zaměstnavatelem a nepřesáhl určité příjmové limity
+   <b>Není třeba podávat přiznání, pokud:</b>
+    - měl jen <b>starobní důchod</b>,
+    - neměl žádné zdanitelné příjmy,
+    - byl <b>zaměstnanec s jedním zaměstnavatelem</b> a nepřesáhl určité příjmové limity
 
    
-   <br/>Přiznání se musí podat, pokud:
-    - měl příjmy nad 50 000 Kč za rok
-    - měl více zaměstnání najednou
-    - měl příjmy z podnikání, nájmu, kapitálu nebo zahraničí
-    - byl OSVČ (výjimka: paušální daň a příjmy pod 50 000 Kč)
+   <br/><b>Přiznání se musí podat, pokud:</b>
+    - měl (mimo své zamětnání) příjmy např. z podnikání nebo nájmu nad 20 000 Kč za rok,
+    - měl více zaměstnání najednou,
+    - byl <b>OSVČ</b> (výjimka: paušální daň a příjmy pod 50 000 Kč)
 
 2. ### ![](/icons/note.svg) Kdo daňové přiznání podává? ###
    Přiznání za zemřelého může podat:
-    - dědic (v příápadě více dědiců se tito dohodnou mezi sebou, kdo konkrétně)
-    - osoba spravující pozůstalost (pokud ji zemřelý určil)
+    - <b>dědic</b> (pozůstalí se dohodnou mezi sebou, kdo konkrétně),
+    - <b>osoba spravující pozůstalost</b> (pokud ji zemřelý určil).
 
-   <br/>K podání budete potřebovat potvrzení od notáře, že jste dědic nebo správce.
+   <br/>K podání budete potřebovat <b>potvrzení od notáře</b>, že jste dědic nebo správce.
 
 3. ### ![](/icons/note.svg) Jaké jsou lhůty a období? ###
-   Do 3 měsíců od úmrtí:
-    - Podává se přiznání za období od 1. 1. do dne před úmrtím.
+   <b>Do 3 měsíců od úmrtí:</b>
+    - Podává se přiznání za období <b>od 1. 1. do dne před úmrtím</b>.
    
-   <br/>Po skončení dědického řízení (pokud trvá déle):
+   <br/><b>Po skončení dědického řízení</b> (pokud trvá déle):
     - Podává se přiznání za zbytek roku, případně další období až do ukončení řízení.
 
 4. ### ![](/icons/note.svg) Jak přiznání podat? ###

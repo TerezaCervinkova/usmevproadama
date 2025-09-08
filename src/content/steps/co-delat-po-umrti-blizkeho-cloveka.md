@@ -8,16 +8,16 @@ preview: První kroky v těžké chvíli - praktický průvodce nejdůležitěj�
 
 ## První kroky v těžké chvíli ##
 
-Ztráta blízkého člověka je jedním z nejtěžších životních okamžiků. V takové chvíli je těžké myslet na praktické záležitosti, které je ale brzy nutné řešit. Proto jsme pro vás připravili přehled toho nejdůležitějšího, co je třeba zařídit po úmrtí partnera, rodiče nebo jiného blízkého člověka.
+Ztráta blízkého člověka je jedním z nejtěžších životních okamžiků. V takové chvíli je těžké myslet na praktické záležitosti. Brzy je ale nutné je řešit, proto jsme pro vás připravili přehled toho nejdůležitějšího, co je třeba zařídit po úmrtí partnera, rodiče nebo jiného blízkého člověka.
 
 1. ### ![](/icons/note.svg)  Lékař a List o prohlídce zemřelého ###
-   Pokud ke smrti došlo v nemocnici nebo domově seniorů, lékař kontaktuje rodinu a vystaví potřebný dokument – tzv. List o prohlídce zemřelého.
+   Pokud ke smrti došlo v <b>nemocnici nebo domově seniorů</b>, lékař kontaktuje rodinu a vystaví potřebný dokument – tzv. <i>List o prohlídce zemřelého</i>.
 
-   Pokud člověk zemřel doma nebo mimo zařízení, volejte Záchrannou službu (155 nebo 112). Lékař provede prohlídku těla a rozhodne o pitvě.
+   Pokud člověk zemřel <b>doma nebo mimo zařízení</b>, volejte Záchrannou službu (155 nebo 112). Lékař provede prohlídku těla a rozhodne o pitvě.
 
    Tento list je základem pro vystavení úmrtního listu a zajištění pohřbu.
 2. ### ![](/icons/note.svg) Hřbitov a pohřeb ###
-   Pohřební služba vám pomůže se všemi formality.
+   Pohřební služba vám pomůže se všemi formalitami.
 
    K vyřízení pohřbu budete potřebovat:
     - svůj doklad totožnosti
