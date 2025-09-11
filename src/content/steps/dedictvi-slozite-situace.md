@@ -10,7 +10,7 @@ preview: Závěti, spory mezi dědici, vydědění a kdy kontaktovat právníka.
 
 Většina dědických řízení je jednoduchá – dědí manžel(ka) spolu s dětmi, majetek se mezi ně rozdělí rovným dílem a vše vyřeší notář během jednoho či dvou setkání. Ale někdy nastanou složitější situace: mohly se dochovat různé verze závěti, mezi dědici mohou být spory, po zemřelém mohl zůstat fungující podnik, majetek v dědictví se může nacházet v zahraničí... V takových případech se vyplatí obrátit na právníka.
 
-1. ### ![](/icons/note.svg)  Jak lze dědit? ###
+1. ### Jak lze dědit? ###
    Dědění ze zákona (nejčastější)
     - Dědí nejbližší příbuzní podle tzv. <b>dědických tříd</b>. 
     - První třída: děti + manžel/manželka (rovným dílem).
@@ -23,7 +23,7 @@ Většina dědických řízení je jednoduchá – dědí manžel(ka) spolu s d�
 
    <br/>Závěť může být sepsaná vlastní rukou, u notáře, nebo s dvěma svědky. Doporučujeme uložit ji do Centrální evidence závětí.
 
-2. ### ![](/icons/note.svg) Vydědění a ztráta dědického práva ###
+2. ### Vydědění a ztráta dědického práva ###
    Zůstavitel může potomka vydědit, pokud:
     - mu neposkytl pomoc,
     - o něj nejevil patřičný zájem,
@@ -36,12 +36,12 @@ Většina dědických řízení je jednoduchá – dědí manžel(ka) spolu s d�
     - způsobili zůstaviteli nebo jeho blízkým újmu,
     - zničili nebo zfalšovali závěť.
 
-3. ### ![](/icons/note.svg) Co když je dědictví složité? ###
+3. ### Co když je dědictví složité? ###
    Může jít o podnik vyžadující odborné vedení, složité závěti, sporné dluhy, majetek v cizině.
 
    V takových případech je vhodné poradit se s advokátem.
 
-4. ### ![](/icons/note.svg) Můžu dědictví odmítnout? ###
+4. ### Můžu dědictví odmítnout? ###
    Ano. Dědictví můžete:
     - <b>odmítnout</b> – jako byste nikdy nedědili (pak dědí vaše děti),
     - <b>vzdát se</b> ve prospěch jiného dědice (ten musí souhlasit),
@@ -49,12 +49,12 @@ Většina dědických řízení je jednoduchá – dědí manžel(ka) spolu s d�
 
    <br/>Pozor: Odmítnutí výhodného dědictví může napadnout váš věřitel, pokud se tím snažíte uniknout odpovědnosti.
 
-5. ### ![](/icons/note.svg) Co dělat, když mám obavy z dluhů po zemřelém? ###
+5. ### Co dělat, když mám obavy z dluhů po zemřelém? ###
    Požádejte o <b>výhradu soupisu pozůstalosti</b> – pak odpovídáte za dluhy jen do hodnoty dědictví.
 
    Soupis může být nahrazen i čestným prohlášením dědiců o majetku – ale nesmí být nepravdivé.
 
-6. ### ![](/icons/note.svg) Správa pozůstalosti ###
+6. ### Správa pozůstalosti ###
    Zůstavitel může ve své závěti určit <b>správce pozůstalosti</b>.
 
    Může ho také jmenovat soud.

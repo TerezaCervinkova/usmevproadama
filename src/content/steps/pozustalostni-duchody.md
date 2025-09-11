@@ -10,7 +10,7 @@ preview: Vdovský, vdovecký a sirotčí důchod - podmínky a postup žádosti.
 
 Pokud vám zemřel manžel/manželka nebo druhý rodič vašeho dítěte, může pro vás být situace nejen emočně, ale i finančně velmi náročná. Český stát v těchto případech poskytuje <b>pozůstalostní důchody: vdovský / vdovecký důchod a sirotčí důchod</b>.
 
-1. ### ![](/icons/note.svg)  Vdovský / vdovecký důchod ###
+1. ### Vdovský / vdovecký důchod ###
    Tento důchod lze získat, pokud jste byli <b>manželé</b> nebo měli <b>(registrované) partnerství</b>. Druh a družka (ani se společnými dětmi) na něj <b>nárok nemají</b>.
 
    <b>Kdy vzniká nárok:</b>
@@ -45,7 +45,7 @@ Pokud vám zemřel manžel/manželka nebo druhý rodič vašeho dítěte, může
     - Můžete podat <b>námitky</b> do 30 dnů.
     - Pokud ČSSZ nevyhoví, lze podat <b>žalobu k soudu</b>.
    
-2. ### ![](/icons/note.svg) Sirotčí důchod ###
+2. ### Sirotčí důchod ###
    Nárok na něj má:
     - <b>nezaopatřené dítě</b> do 26 let, pokud se připravuje studiem na povolání nebo je zdravotně omezené.
    

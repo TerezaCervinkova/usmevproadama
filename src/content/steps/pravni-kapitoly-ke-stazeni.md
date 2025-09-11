@@ -6,24 +6,31 @@ order: 8
 preview: Všechny právní kapitoly přehledně na jednom místě.
 ---
 
-1. ### ![](/icons/note.svg)  Co dělat po úmrtí blízkého člověka ###
-    Kompletní kapitola ke stažení
+1. ### Co dělat po úmrtí blízkého člověka ###
+    <a href='/public/docs/I_Prvni_kroky.pdf' target='_blank' class='underline'
+              >Kompletní kapitola ke stažení</a>
 
 
-2. ### ![](/icons/note.svg) Co se děje s věcmi po zesnulém ###
-   Kompletní kapitola ke stažení
+2. ### Co se děje s věcmi po zesnulém ###
+   <a href='/public/docs/II_Zdravotnicka_dokumentace_zemreleho.pdf' target='_blank' class='underline'
+              >Kompletní kapitola ke stažení</a>
 
-3. ### ![](/icons/note.svg) Úmrtí způsobené cizím zaviněním ###
-    Kompletní kapitola ke stažení
+3. ### Úmrtí způsobené cizím zaviněním ###
+    <a href='/public/docs/III_Neprirozene_umrti_a_cizi_zavineni.pdf' target='_blank' class='underline'
+              >Kompletní kapitola ke stažení</a>
 
-4. ### ![](/icons/note.svg) Daňové přiznání po úmrtí ###
-   Kompletní kapitola ke stažení
+4. ### Daňové přiznání po úmrtí ###
+   <a href='/public/docs/IV_Dane_zemreleho.pdf' target='_blank' class='underline'
+              >Kompletní kapitola ke stažení</a>
 
-5. ### ![](/icons/note.svg) Exekuce a dluhy po smrti ###
-   Kompletní kapitola ke stažení
+5. ### Exekuce a dluhy po smrti ###
+   <a href='/public/docs/V_Exekuce,_insolvence_a_soudni_rizeni.pdf' target='_blank' class='underline'
+              >Kompletní kapitola ke stažení</a>
 
-6. ### ![](/icons/note.svg) Dědictví - složité situace ###
-   Kompletní kapitola ke stažení
+6. ### Dědictví - složité situace ###
+   <a href='/public/docs/VI_Dedictvi.pdf' target='_blank' class='underline'
+              >Kompletní kapitola ke stažení</a>
 
-7. ### ![](/icons/note.svg) Pozůstalostní důchody ###
-   Kompletní kapitola ke stažení
+7. ### Pozůstalostní důchody ###
+   <a href='/public/docs/VII_Duchody_vdovsky_a_sirotci.pdf' target='_blank' class='underline'
+              >Kompletní kapitola ke stažení</a>

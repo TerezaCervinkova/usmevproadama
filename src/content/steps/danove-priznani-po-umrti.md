@@ -10,7 +10,7 @@ preview: Kdy a kdo musí podat daňové přiznání, lhůty a požadované dokum
 
 Smrt blízkého člověka s sebou může přinést i daňové povinnosti. Pokud zemřelý podával daňové přiznání, je třeba ho vyřídit za období od začátku roku do dne úmrtí. Zákonná lhůta je přísná – <b>pouze 3 měsíce od úmrtí</b>.
 
-1. ### ![](/icons/note.svg)  Musí se vůbec podávat daňové přiznání? ###
+1. ###  Musí se vůbec podávat daňové přiznání? ###
    Ne vždy. Záleží na typu příjmů, které zesnulý měl.
 
    <b>Není třeba podávat přiznání, pokud:</b>
@@ -24,21 +24,21 @@ Smrt blízkého člověka s sebou může přinést i daňové povinnosti. Pokud 
     - měl více zaměstnání najednou,
     - byl <b>OSVČ</b> (výjimka: paušální daň a příjmy pod 50 000 Kč)
 
-2. ### ![](/icons/note.svg) Kdo daňové přiznání podává? ###
+2. ### Kdo daňové přiznání podává? ###
    Přiznání za zemřelého může podat:
     - <b>dědic</b> (pozůstalí se dohodnou mezi sebou, kdo konkrétně),
     - <b>osoba spravující pozůstalost</b> (pokud ji zemřelý určil).
 
    <br/>K podání budete potřebovat <b>potvrzení od notáře</b>, že jste dědic nebo správce.
 
-3. ### ![](/icons/note.svg) Jaké jsou lhůty a období? ###
+3. ### Jaké jsou lhůty a období? ###
    <b>Do 3 měsíců od úmrtí:</b>
     - Podává se přiznání za období <b>od 1. 1. do dne před úmrtím</b>.
    
    <br/><b>Po skončení dědického řízení</b> (pokud trvá déle):
     - Podává se přiznání za zbytek roku, případně další období až do ukončení řízení.
 
-4. ### ![](/icons/note.svg) Jak přiznání podat? ###
+4. ### Jak přiznání podat? ###
    Použijte formulář na: www.financnisprava.cz
    
    Odevzdat můžete:
@@ -46,7 +46,7 @@ Smrt blízkého člověka s sebou může přinést i daňové povinnosti. Pokud 
     - poštou,
     - elektronicky (např. přes datovou schránku).
 
-5. ### ![](/icons/note.svg) Rychlé shrnutí ###
+5. ### Rychlé shrnutí ###
    | Situace             | Podává se přiznání? | 
    | :---------------- | :------: | 
    | Pouze starobní důchod       |   NE  | 
