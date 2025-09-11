@@ -7,7 +7,7 @@ preview: Všechny právní kapitoly přehledně na jednom místě.
 ---
 
 1. ### Co dělat po úmrtí blízkého člověka ###
-    <a href='/public/docs/I_Prvni_kroky.pdf' target='_blank' class='underline'
+    <a href='/public/docs/I_Prvni_kroky.pdf' class='underline'
               >Kompletní kapitola ke stažení</a>
 
 
