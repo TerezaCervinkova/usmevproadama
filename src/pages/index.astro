@@ -34,8 +34,8 @@ const steps = await getCollection('steps')
             dokud nečelí nejtěžším životním výzvám.
           </Text>
           <div class='flex gap-4 flex-col md:flex-row my-6'>
-            <LinkButton href='/xxx' theme='primary' class='head-button'>Získat bezplatný výtisk</LinkButton>
-            <LinkButton href='/asds' theme='outline'>Číst ukázku</LinkButton>
+            <LinkButton href='#kniha' theme='primary' class='head-button'>Získat bezplatný výtisk</LinkButton>
+
           </div>
           <Text class='text-left'
             >Přišel vám od nás výtisk do rukou? Budeme rádi, když nám pomůžete dostat téma k dalším lidem. Více
@@ -81,7 +81,7 @@ const steps = await getCollection('steps')
             Tato kniha nabízí nejen příběh, ale také konkrétní rady  a praktické tipy pro lidi, kteří čelí ztrátě
             blízkého včetně přehledného harmonogramu kroků k vyřízení formou letáku ke stažení.
           </Text>
-          <div class="mt-4 mb-8"><LinkButton href='/aaa' theme="outline">Leták ke stažení</LinkButton></div>
+          <div class="mt-4 mb-8"><LinkButton href='/docs/letak.pdf' target='_blank' theme="outline">Leták ke stažení</LinkButton></div>
           <Text class='text-left'>
             Prošli jsme poslední 4 roky z fáze „Neboj, bude lépe" přes fázi „Nikdy není tak zle, aby nemohlo být ještě
             hůře" do fáze „Co tě nezabije, to tě posílí" s vedlejšími účinky, jako je nežádoucí černý humor a „lehce"
@@ -177,7 +177,7 @@ const steps = await getCollection('steps')
           </div>
         </div>
         <div class='flex justify-center'>
-          <LinkButton href='/xxx' theme='primary' class='head-button'>Získat bezplatný výtisk</LinkButton>
+          <LinkButton href='#kniha' theme='primary' class='head-button'>Získat bezplatný výtisk</LinkButton>
         </div>
       </Box>
     </Content>
@@ -351,14 +351,15 @@ const steps = await getCollection('steps')
         Tato kniha je dostupná zdarma díky podpoře nadace EPCG. Pro získání bezplatného výtisku nám jednoduše napište na
         Instagram nebo na <TextLink href='mailto:autor@usmevproadama.cz'>autor@usmevproadama.cz</TextLink>
       </Text>
-      <div class='grid grid-cols-1 md:grid-cols-2 gap-4'>
+      <div id='kniha' class='grid grid-cols-1 md:grid-cols-2 gap-4'>
         <PrintBox
           headline='@usmevproadama'
           note='Sledujte náš příběh'
           alt='Instagram'
           icon='/icons/instagram.svg'
-          link='aaa'
+          link='http://instagram.com/usmevproadama'
           linkLabel='Napsat na Instagram'
+          target='_blank'
         >
           <List class='list-disc'>
             <li>Pošlete nám zprávu a získejte knihu zdarma.</li>
@@ -371,7 +372,7 @@ const steps = await getCollection('steps')
           note='Spojte se s námi'
           alt='E-mail'
           icon='/icons/mail.svg'
-          link='mailto:xxx'
+          link='mailto:autor@usmevproadama.cz'
           linkLabel='Napište nám'
         >
           <List class='list-disc'>
