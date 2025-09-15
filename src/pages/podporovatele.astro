@@ -6,6 +6,7 @@ import H2 from '../components/ui/H2.astro'
 import H3 from '../components/ui/H3.astro'
 import Backlink from '../components/Backlink.astro'
 import List from '../components/ui/List.astro'
+import LinkButton from '../components/ui/LinkButton.astro'
 ---
 
 <Layout>
@@ -27,6 +28,9 @@ import List from '../components/ui/List.astro'
           pozůstalí najít potřebné rady
         </li>
       </List>
+      <div class="flex justify-center md:justify-start mt-4">
+        <LinkButton href="/docs/letak.pdf" theme="outline">Leták ke stažení</LinkButton>
+      </div>
     </Content>
     <Content bg='white'>
       <H3 class='text-left'> Proč věřím, že to má smysl</H3>
