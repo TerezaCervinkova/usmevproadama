@@ -95,7 +95,7 @@ const statisticsPosts = await getCollection('statistics')
             <H3 class="text-left mt-0">{post.data.title}</H3>
             <Text class="text-left">{post.data.preview}</Text>
           </div>
-          <div class="md:self-center w-full"><LinkButton href={`/pruvodce-pozustalym/clanek/${post.id}`} theme="primary" class="w-full inline-block">Přečíst</LinkButton></div>
+          <div class="md:self-center w-full"><LinkButton href={`/jsem-taky-dite/clanek/${post.id}`} theme="primary" class="w-full inline-block">Přečíst</LinkButton></div>
         </div>)}
       </div>
     </Content>
@@ -106,7 +106,7 @@ const statisticsPosts = await getCollection('statistics')
           <div class="grid grid-rows-[1fr_auto] h-full">
             <H3 class="text-center mt-0 mb-4">{stat.data.preview}</H3>
             <div class="flex justify-center">
-              <LinkButton href={`/pruvodce-pozustalym/statistiky/${stat.id}`} theme="outline">Zobrazit detail</LinkButton>
+              <LinkButton href={`/jsem-taky-dite/statistiky/${stat.id}`} theme="outline">Zobrazit detail</LinkButton>
             </div>
           </div>
         </Box>)}
