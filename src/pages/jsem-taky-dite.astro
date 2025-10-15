@@ -8,6 +8,7 @@ import Box from '../components/ui/Box.astro'
 import H3 from '../components/ui/H3.astro'
 import { getCollection } from 'astro:content'
 import LinkButton from '../components/ui/LinkButton.astro'
+import H1 from '../components/ui/H1.astro'
 
 const guidePosts = await getCollection('guidePosts')
 const statisticsPosts = await getCollection('statistics')
@@ -17,7 +18,7 @@ const statisticsPosts = await getCollection('statistics')
 <Layout>
   <main>
     <Content bg="light">
-      <H2 class="text-left">Základní informace k autismu</H2>
+      <H1 class="text-center">Základní informace k autismu</H1>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Box class="text-sm">
           <H3 class="text-left">Co je dětský autismus? Jiný způsob, jak vidět svět

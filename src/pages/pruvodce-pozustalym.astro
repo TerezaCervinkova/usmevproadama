@@ -8,13 +8,14 @@ import SupportBox from '../components/SupportBox.astro'
 import Note from '../components/ui/Note.astro'
 import ToggledContent from '../components/ToggledContent.astro'
 import { getCollection } from 'astro:content'
+import H1 from '../components/ui/H1.astro'
 const steps = await getCollection('steps')
 ---
 
 <Layout>
   <main>
     <Content bg='white'>
-      <H2>Kroky po úmrtí blízkého</H2>
+      <H1 class="text-center">Kroky po úmrtí blízkého</H1>
       <Text class='mb-1'>
         Tato kniha nabízí nejen příběh, ale také konkrétní rady a praktické tipy pro lidi, kteří čelí ztrátě blízkého.
       </Text>
