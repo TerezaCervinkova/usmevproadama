@@ -5,20 +5,22 @@ type BgType = 'white' | 'light' | 'dark' | 'transparent'
 
 interface Props {
   bg: BgType
+  class?: string
+  id?: string
 }
 
-const { bg: bgValue } = Astro.props
+const { bg: bgValue, class: customClass, id } = Astro.props
 
 const bgMap: Record<BgType, string> = {
-  white: 'white',
+  white: 'bg-white',
   light: 'bg-light',
   dark: 'bg-dark text-white',
   transparent: 'transparent',
 }
 ---
 
-<section class={cn(bgMap[bgValue])}>
-  <div class='container mx-auto py-12 px-8 md:px-42'>
+<section class={cn(bgMap[bgValue])} id={id}>
+  <div class={cn('container mx-auto py-12 px-8 md:px-42', customClass)}>
     <slot />
   </div>
 </section>

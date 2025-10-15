@@ -1,0 +1,113 @@
+---
+import Content from './ui/Content.astro'
+
+const links: { href: string; label: string }[] = [
+{ href: '/pruvodce-pozustalym', label: 'Průvodce pozůstalým' },
+{ href: '/jsem-taky-dite', label: 'Jsem taky dítě' },
+{ href: '/podporovatele', label: 'Podporovatelé' },
+]
+---
+
+<div id='navbar' class='fixed z-40 top-0 text-white h-[80px] w-full'>
+  <div id='navbar__bg' class='w-full h-full transition-colors duration-500'></div>
+  <nav class='absolute top-0 w-full h-full  border-b border-b-primary/20'>
+    <div class='hidden md:block'>
+      <Content bg='transparent' class="py-0 h-[80px]">
+        <div class='flex justify-between items-center h-full'>
+          <a href='/'><img src="/img/logo_adam.svg" alt="" class="w-[80px]" /></a>
+          <ul class='flex gap-8 mb-0!'>
+            {
+              links.map((link) => (
+                <li>
+                  <a
+                    href={link.href}
+                    class='text-[14px] text-content-text font-semibold pb-1 duration-200 border-b-2 border-b-transparent  hover:border-b-content-text inline-block'
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </Content>
+    </div>
+    <div id='mobile-menu-closed' class='md:hidden h-[80px]'>
+      <Content bg='transparent' class="py-0">
+        <div class='h-[80px] flex justify-between items-center'>
+          <a href='/'><img src="/img/logo_adam.svg" alt="" class="w-[80px]" /></a>
+          <div>
+            <button id='mobile-menu-button' type='button'
+            ><img src='/icons/burger-menu.svg' alt='menu' class='h-[70px] w-[40px]' /></button
+            >
+          </div>
+        </div>
+      </Content>
+    </div>
+    <dialog class='mobile-menu bg-white h-dvh m-0' id='mobile-menu-open'>
+      <Content bg='transparent' class="py-0">
+        <div class='h-[80px] flex justify-end items-center'>
+          <button id='mobile-close-button' type='button'>
+            <img src='/icons/close.svg' alt='menu' class='h-[30px] w-[30px]' />
+          </button>
+        </div>
+        <div>
+          <ul
+            class='flex flex-col md:flex-row items-center justify-end gap-4 h-full font-bold text-slate-800 text-md mt-8'
+          >
+            <li class='mb-4'>
+              <a href='/'>
+                <img src="/img/logo_adam.svg" alt="" class="w-[80px]" />
+              </a>
+            </li>
+            {
+              links.map((link) => (
+                <li>
+                  <a class='duration-200 px-4 py-2 text-content-text' href={link.href}>
+                    {link.label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </Content>
+    </dialog>
+    <script>
+      const mobileBurgerButton = document.getElementById('mobile-menu-button')
+      const mobileOpenMenu = document.getElementById('mobile-menu-open') as HTMLDialogElement
+      const mobileCloseButton = document.getElementById('mobile-close-button')
+
+      const mobileMenuLinks = document.querySelectorAll('#mobile-menu-open a')
+
+      mobileBurgerButton?.addEventListener('click', () => {
+        mobileOpenMenu?.showModal()
+      })
+
+      mobileCloseButton?.addEventListener('click', () => {
+        mobileOpenMenu.close()
+      })
+
+      mobileMenuLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+          mobileOpenMenu.close()
+        })
+      })
+    </script>
+  </nav>
+</div>
+
+<script>
+  const navbar = document.getElementById('navbar')
+  const navbarBg = document.getElementById('navbar__bg')
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+      navbar?.classList.add('border-b')
+      navbarBg?.classList.add('bg-white')
+    } else {
+      navbar?.classList.remove('border-b')
+      navbarBg?.classList.remove('bg-white')
+    }
+  })
+</script>

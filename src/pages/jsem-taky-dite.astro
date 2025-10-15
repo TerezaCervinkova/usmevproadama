@@ -1,0 +1,116 @@
+---
+
+import Layout from '../layouts/Layout.astro'
+import Content from '../components/ui/Content.astro'
+import H2 from '../components/ui/H2.astro'
+import Text from '../components/ui/Text.astro'
+import Box from '../components/ui/Box.astro'
+import H3 from '../components/ui/H3.astro'
+import { getCollection } from 'astro:content'
+import LinkButton from '../components/ui/LinkButton.astro'
+
+const guidePosts = await getCollection('guidePosts')
+const statisticsPosts = await getCollection('statistics')
+
+---
+
+<Layout>
+  <main>
+    <Content bg="light">
+      <H2 class="text-left">Základní informace k autismu</H2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <Box class="text-sm">
+          <H3 class="text-left">Co je dětský autismus? Jiný způsob, jak vidět svět
+          </H3>
+          <Text class="text-left"><strong>Autismus není nemoc, ale vrozený způsob, jak mozek dítěte zpracovává realitu. Pojďme se podívat, proč je důležité dívat se na autistické děti s empatií a přijetím, ne s lítostí.</strong></Text>
+          <Text class="text-left">
+            Autismus není nemoc, kterou by bylo možné „vyléčit“. Je to odlišný způsob fungování mozku, který ovlivňuje, jak dítě komunikuje, hraje si a vnímá svět kolem sebe. Proto se také mluví o poruše autistického spektra, protože projevy mohou být velmi různé.
+          </Text>
+          <Text class="text-left">
+            Autistické děti mohou mít obtíže s očním kontaktem, porozuměním gestům nebo navazováním přátelství. Na druhou stranu ale často vynikají v přesnosti, logice, detailním vnímání nebo paměti.
+          </Text>
+          <Text class="text-left ">Každé dítě s autismem je jiné. Někdo mluví málo, někdo hodně. Někdo potřebuje asistenci ve škole, jiný ji zvládne sám.
+          </Text>
+          <Text class="text-left">
+            Mýty, které je dobré vyvrátit:
+            <ul class="list-disc ml-6 [&>li]:text-sm!">
+              <li>Autismus není nedostatek emocí. Emoce jsou přítomné, jen se vyjadřují jinak.</li>
+              <li>Autismus nevzniká špatnou výchovou.</li>
+              <li>Autismus není vzácný – odhady hovoří o tom, že se týká až 2 % dětí.</li>
+              <li>Autismus není tragédie. Tragédií je spíše nepochopení a odmítnutí.</li>
+            </ul>
+          </Text>
+        </Box>
+        <Box class="text-sm">
+          <H3 class="text-left">Proč autismus vzniká? Odpověď není černobílá</H3>
+          <Text class="text-left"> <strong>Rodiče po diagnóze často přemýšlejí: „Proč právě naše dítě?“ Vysvětlení autismu není jednoduché. Víme ale, že nejde o chybu rodičů ani o špatnou výchovu.</strong></Text>
+          <Text class="text-left">Autismus je vrozená neurovývojová odlišnost. Na jeho vzniku se podílejí genetické faktory i raný vývoj mozku v těhotenství.</Text>
+          <Text class="text-left mb-2">To, co dnes víme jistě:
+            <ul class="list-disc ml-6 [&>li]:text-sm!">
+              <li>Neexistuje jediný „gen pro autismus“. Jde o kombinaci více vlivů.
+              </li>
+              <li>Autismus není důsledkem očkování, špatné stravy nebo nedostatku lásky.
+              </li>
+              <li>Každé dítě se rodí s jinak nastaveným mozkem a autismus je jedním z projevů této rozmanitosti.
+              </li>
+              <li>Autismus není tragédie. Tragédií je spíše nepochopení a odmítnutí.</li>
+            </ul>
+          </Text>
+          <Text class="text-left mt-2">
+            Autismus může být obtíž, ale také přináší jedinečný úhel pohledu. Společnost, která tyto rozdíly přijímá, je bohatší a lidštější.
+          </Text>
+        </Box>
+        <Box class="text-sm">
+          <H3 class="text-left">Jak poznat autismus u dětí? Typické projevy a příklady z praxe</H3>
+          <Text class="text-left"><strong>Každé dítě s autismem je jiné. Přesto existují projevy, které nám pomohou lépe rozumět tomu, jak autistické děti vnímají svět – a proč někdy reagují jinak, než čekáme.</strong></Text>
+          <Text class="text-left">Autistické dítě může vnímat svět mnohem intenzivněji. Obyčejný supermarket pro něj může být hlukem, světlem a pachy natolik zahlcující, že reaguje pláčem nebo křikem. Není to rozmar, je to přetížení.</Text>
+          <Text class="text-left">Další typický znak je potřeba rutiny. Když rodič změní cestu do školky, může to vyvolat stres, který si ostatní nedokáží představit.</Text>
+          <Text class="text-left">V sociálních vztazích dítě často touží po kamarádech, ale neumí navázat kontakt. Nebo nerozumí pravidlům hry. A pak jsou tu specifické zájmy – dinosauři, planety, jízdní řády. V těchto oblastech dítě září a je schopné fascinovat svou znalostí.</Text>
+          <Text class="text-left">Autismus není „neposlušnost“. Je to jiná cesta, jak poznávat svět.</Text>
+        </Box>
+        <Box class="text-sm">
+          <H3 class="text-left">Jak můžeme lépe chápat a podporovat autistické děti?</H3>
+          <Text class="text-left"><strong>Autistické děti nepotřebují lítost ani „nápravu“. Potřebují porozumění, trpělivost a respekt. Každý z nás může přispět k tomu, aby se cítily přijímané.</strong></Text>
+          <Text class="text-left">Když vidíme dítě, které na hřišti křičí nebo se válí na zemi, máme tendenci soudit: „To je ale nevychované.“ Jenže možná jde o dítě s autismem, které zažívá smyslové přetížení.</Text>
+          <Text class="text-left">První krok je neposuzovat, což je velký nešvar v české společnosti. Druhý krok je respektovat hranice dítěte. Pokud mu vadí doteky, neznamená to, že je nepřátelské. Pokud potřebuje stále stejnou hračku, není to rozmar, ale způsob, jak se cítit v bezpečí.</Text>
+          <Text class="text-left mb-2">
+            Co můžeme dělat?
+            <ul class="list-disc ml-6 [&>li]:text-sm!">
+              <li>Vysvětlovat změny předem.</li>
+              <li>Mluvit jasně a jednoduše.</li>
+              <li>Hledat způsoby, jak využít jejich silné stránky.</li>
+              <li>Učit ostatní děti toleranci a empatii</li>
+            </ul>
+          </Text>
+          <Text class="text-left mt-2">Když autistické dítě cítí přijetí, rozkvete. Když cítí odmítání, zavírá se do sebe. My všichni můžeme být buď překážkou, nebo mostem.</Text>
+          <Text class="text-left">Ale hlavně, Váš úsměv je vždy zadarmo, ale pro rodiče takového dítěte může znamenat hodně.</Text>
+        </Box>
+      </div>
+    </Content>
+    <Content bg="white">
+      <H2 class="text-left">Společnost v ČR a dětský autismus</H2>
+      <div class="grid grid-cols-1 gap-4">
+        {guidePosts.sort((a,b) => a.data.order - b.data.order).map(post => <div class="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-4 border-b-2 border-b-primary last:border-b-0 pb-8 md:pb-0">
+          <div>
+            <H3 class="text-left mt-0">{post.data.title}</H3>
+            <Text class="text-left">{post.data.preview}</Text>
+          </div>
+          <div class="md:self-center w-full"><LinkButton href={`/pruvodce-pozustalym/clanek/${post.id}`} theme="primary" class="w-full inline-block">Přečíst</LinkButton></div>
+        </div>)}
+      </div>
+    </Content>
+    <Content bg="light">
+      <H2 class="text-left">Statistiky</H2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {statisticsPosts.map(stat => <Box>
+          <div class="grid grid-rows-[1fr_auto] h-full">
+            <H3 class="text-center mt-0 mb-4">{stat.data.preview}</H3>
+            <div class="flex justify-center">
+              <LinkButton href={`/pruvodce-pozustalym/statistiky/${stat.id}`} theme="outline">Zobrazit detail</LinkButton>
+            </div>
+          </div>
+        </Box>)}
+      </div>
+    </Content>
+  </main>
+</Layout>

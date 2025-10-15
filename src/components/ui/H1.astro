@@ -1,5 +1,10 @@
 ---
+import { cn } from '../../utils/cn.ts'
+interface Props {
+  class?: string;
+}
 
+const { class: customClass } = Astro.props;
 ---
 
-<h1 class="text-3xl text-dark font-bold mb-8"><slot /></h1>
+<h1 class={cn("text-3xl text-dark font-bold mb-8", customClass)}><slot /></h1>

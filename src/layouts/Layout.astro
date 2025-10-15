@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css'
 import Content from '../components/ui/Content.astro'
+import Navigation from '../components/Navigation.astro'
 ---
 
 <!doctype html>
@@ -34,7 +35,8 @@ import Content from '../components/ui/Content.astro'
   </head>
   <body>
     <div class='layout'>
-      <slot />
+      <Navigation />
+      <div class='mt-[80px]'><slot /></div>
       <footer class='text-center'>
         <Content bg='dark'>
           <strong class='inline-block text-lg mb-2'>Úsměv pro Adama</strong>

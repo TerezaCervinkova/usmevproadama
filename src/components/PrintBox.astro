@@ -27,7 +27,7 @@ const { headline, note, icon, alt, link, linkLabel } = Astro.props
       </div>
     </div>
     <div class='text-sm my-4'><slot /></div>
-    <LinkButton theme='primary' href={link} class='flex items-center gap-2 justify-center'>
+    <LinkButton theme='primary' href={link} class='inline-flex items-center gap-2 justify-center min-w-[200px] mx-auto'>
       <img class='w-[16px]' src={icon} alt={alt} />
       <span>{linkLabel}</span>
     </LinkButton>

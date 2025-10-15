@@ -9,17 +9,10 @@ import Box from '../components/ui/Box.astro'
 import Li from '../components/ui/Li.astro'
 import Chapter from '../components/Chapter.astro'
 import TextLink from '../components/ui/TextLink.astro'
-import { getCollection } from 'astro:content'
 import LinkButton from '../components/ui/LinkButton.astro'
-import SupportBox from '../components/SupportBox.astro'
 import RatingBox from '../components/RatingBox.astro'
-import Step from '../components/Step.astro'
-import Note from '../components/ui/Note.astro'
-import ToggledContent from '../components/ToggledContent.astro'
 import PrintBox from '../components/PrintBox.astro'
 import List from '../components/ui/List.astro'
-
-const steps = await getCollection('steps')
 ---
 
 <Layout>
@@ -34,23 +27,52 @@ const steps = await getCollection('steps')
             dokud nečelí nejtěžším životním výzvám.
           </Text>
           <div class='flex gap-4 flex-col md:flex-row my-6'>
-            <LinkButton href='#kniha' theme='primary' class='head-button'>Získat bezplatný výtisk</LinkButton>
-
+            <LinkButton href='#kniha' theme='primary' class='head-button'>Získat PDF knihu zdarma</LinkButton>
+            <LinkButton href='/ukazka-knihy' theme='outline'>Ukázka knihy</LinkButton>
           </div>
-          <Text class='text-left'
-            >Přišel vám od nás výtisk do rukou? Budeme rádi, když nám pomůžete dostat téma k dalším lidem. Více
-            informací naleznete <a href='/podporovatele' class='underline'><strong>zde</strong></a>.</Text
-          >
         </div>
         <div class='bg-[#F9EDE0] p-2 rounded-md w-full md:w-max m-auto'>
           <Box class='inline-block p-3'>
-            <img src='/img/header.webp' alt='' class='w-full md:w-[280px] rounded-md' fetchpriority="high" />
+            <img src='/img/header.webp' alt='' class='w-full md:w-[280px] rounded-md' fetchpriority='high' />
           </Box>
         </div>
       </div>
     </Content>
   </header>
   <main>
+    <Content bg='light' class="pt-0">
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-4'>
+        <Box>
+          <div class='grid grid-rows-[auto_1fr_auto] h-full'>
+            <H3 class='text-dark text-left text-lg font-semibold'> Pro podporovatele </H3>
+            <Text class='text-left'>
+              Přišel vám od nás výtisk do rukou? Budeme rádi, když nám pomůžete dostat téma k
+              dalším lidem.
+            </Text>
+            <LinkButton href='/podporovatele' theme='outline' class='mx-auto md:max-w-[200px]'>Více informací</LinkButton>
+          </div>
+        </Box>
+        <Box>
+          <div class='grid grid-rows-[auto_1fr_auto] h-full'>
+            <H3 class='text-dark text-left text-lg font-semibold'> Projekt Průvodce pozůstalým </H3>
+            <Text class='text-left'>
+              Praktické rady a tipy pro lidi v těžkých životních situacích spojených se ztrátou blízké osoby.
+            </Text>
+            <LinkButton href='/pruvodce-pozustalym' theme='outline' class='mx-auto md:max-w-[200px]'>Více informací</LinkButton>
+          </div>
+        </Box>
+        <Box>
+          <div class='grid grid-rows-[auto_1fr_auto] h-full'>
+            <H3 class='text-dark text-left text-lg font-semibold'> Projekt Jsem taky dítě </H3>
+            <Text class='text-left'>
+              Jako máma dítěte s autismem bojuji za nové pojetí inkluze, která není o tom, aby se dítě přizpůsobilo
+              světu, ale naopak aby se svět naučil přijímat všechny děti.
+            </Text>
+            <LinkButton href='/jsem-taky-dite' theme='outline' class='mx-auto md:max-w-[200px]'>Více informací</LinkButton>
+          </div>
+        </Box>
+      </div>
+    </Content>
     <Content bg='white'>
       <H2 class='text-left'>O mně</H2>
       <div class='grid grid-cols-1 md:grid-cols-2 items-center gap-8'>
@@ -81,7 +103,9 @@ const steps = await getCollection('steps')
             Tato kniha nabízí nejen příběh, ale také konkrétní rady  a praktické tipy pro lidi, kteří čelí ztrátě
             blízkého včetně přehledného harmonogramu kroků k vyřízení formou letáku ke stažení.
           </Text>
-          <div class="mt-4 mb-8"><LinkButton href='/docs/letak.pdf' target='_blank' theme="outline">Leták ke stažení</LinkButton></div>
+          <div class='mt-4 mb-8'>
+            <LinkButton href='/docs/letak.pdf' target='_blank' theme='outline'>Leták ke stažení</LinkButton>
+          </div>
           <Text class='text-left'>
             Prošli jsme poslední 4 roky z fáze „Neboj, bude lépe" přes fázi „Nikdy není tak zle, aby nemohlo být ještě
             hůře" do fáze „Co tě nezabije, to tě posílí" s vedlejšími účinky, jako je nežádoucí černý humor a „lehce"
@@ -157,6 +181,9 @@ const steps = await getCollection('steps')
             />
           </Li>
         </ol>
+        <div class='flex justify-center mt-4'>
+          <LinkButton href='/ukazka-knihy' theme='outline'>Ukázka knihy</LinkButton>
+        </div>
       </Box>
       <Box class='mt-8'>
         <div class='grid grid-cols-1 md:grid-cols-[1fr_auto] gap-0 md:gap-8'>
@@ -177,152 +204,9 @@ const steps = await getCollection('steps')
           </div>
         </div>
         <div class='flex justify-center'>
-          <LinkButton href='#kniha' theme='primary' class='head-button'>Získat bezplatný výtisk</LinkButton>
+          <LinkButton href='#kniha' theme='primary' class='head-button'>Získat PDF knihu zdarma</LinkButton>
         </div>
       </Box>
-    </Content>
-    <Content bg='white'>
-      <H2>Kroky po úmrtí blízkého</H2>
-      <Text class='mb-1'>
-        Tato kniha nabízí nejen příběh, ale také konkrétní rady a praktické tipy pro lidi, kteří čelí ztrátě blízkého.
-      </Text>
-      <Text class="mb-1"><strong>Kniha i praktické rady jsou součástí mého projektu Průvodce pozůstalým</strong></Text>
-      <Text class="mb-8">Ten vznikl jako pomoc lidem v těžkých životních situacích spojených se ztrátou blízké osoby.</Text>
-      <div class='grid grid-cols-1 md:grid-cols-3 gap-4'>
-        {steps.sort((a, b) => a.data.order - b.data.order).map((step) => <Step step={step.data} />)}
-        <div class="flex items-center p-6 justify-center">
-          <img src="/img/logo_projekt.webp" alt="" class="max-w-full" />
-        </div>
-      </div>
-    </Content>
-    <Content bg='light'>
-      <H2>Podpora v těžkých chvílích</H2>
-      <Text class='pb-4'>
-        Praktické nástroje a techniky pro zvládání stresu, hledání vnitřní síly a postupné vyrovnávání se s těžkými
-        životními situacemi.
-      </Text>
-      <div class='grid grid-cols-1 md:grid-cols-3 gap-4'>
-        <SupportBox
-          headline='Metody sebereflexe a zvládání stresu'
-          description="Sebereflexe a zvládání stresu jsou klíčové dovednosti pro každého, kdo prochází náročným obdobím. Umožňují nám zastavit se, podívat se na situaci s odstupem a zvolit cestu, která nás posune dál. Nejde o to být „pořád v pohodě', ale naučit se rozpoznat, co se v nás děje, a vědomě s tím pracovat."
-          image='/img/support-1.webp'
-        >
-          <div class='flex flex-col gap-2' slot="content">
-            <Note>
-              <strong>Co si odnést</strong>: Sebereflexe není o hledání chyb, ale o nacházení cesty k sobě. Čím víc ji
-              trénuješ, tím snáz zvládáš stres a těžké chvíle.
-            </Note>
-            <Note>
-              <strong>Užitečné kontakty:</strong><br />
-              Linka první psychické pomoci: <strong>116 123</strong> (zdarma, nonstop)
-            </Note>
-          </div>
-          <ToggledContent slot='toggle' label='Praktické metody' id='step1'>
-            <ul>
-              <li>
-                <strong>Denní záznam myšlenek a pocitů</strong> – zapisuj si ráno nebo večer, co se ti honí hlavou. Pomáhá
-                to vyčistit mysl a odhalit vzorce chování.
-              </li>
-              <li>
-                <strong>Technika „STOP"</strong> – kdykoliv cítíš, že tě ovládá stres:
-                <ul>
-                  <li>S – Zastav se.</li>
-                  <li>T – Tři hluboké nádechy.</li>
-                  <li>O – Otoč pozornost k tomu, co právě děláš.</li>
-                  <li>P – Pokračuj s novým nastavením.</li>
-                </ul>
-              </li>
-              <li>
-                <strong>Reflexe otázek</strong>– polož si otázky: „Co je pro mě teď nejdůležitější?", „Co v této situaci
-                opravdu ovlivním?"
-              </li>
-              <li>
-                <strong>Mindfulness pro začátečníky</strong> – věnuj 5 minut denně vnímání dechu, těla a okolí bez hodnocení.
-              </li>
-              <li><strong>Tělesná aktivita</strong> – i krátká procházka nebo strečink zklidní tělo a tím i mysl.</li>
-            </ul>
-          </ToggledContent>
-        </SupportBox>
-        <SupportBox
-          headline='Metody sebereflexe a zvládání stresu'
-          description="Síla není o tom neplakat nebo „držet se' za každou cenu. Skutečná síla spočívá v tom, že umíš uznat své emoce a přesto najdeš způsob, jak pokračovat dál."
-          image='/img/support-2.webp'
-        >
-          <div class='flex flex-col gap-2' slot="content">
-            <Note>
-              <strong>Co si odnést</strong>: Zůstat silný neznamená necítit bolest. Znamená to umět jít dál, i když ji
-              cítíš.
-            </Note>
-            <Note>
-              <strong>Užitečné kontakty:</strong><br />
-              Linka bezpečí: <strong>116 111</strong> (děti a mládež)<br />
-              Linka pro rodinu: <strong>116 000</strong>
-            </Note>
-          </div>
-          <ToggledContent slot='toggle' label='Techniky pro udržení vnitřní síly' id='step2'>
-            <ul>
-              <li><strong>Malé denní cíle</strong> – zaměř se na to, co je zvládnutelné dnes, ne na celý život.</li>
-              <li>
-                <strong>Opěrné body</strong> – lidé, místa nebo rituály, které ti dodávají jistotu (např. oblíbená kavárna,
-                telefonát s blízkým).
-              </li>
-              <li>
-                <strong>Pozitivní kotvy</strong> – vědomě si připomínej tři věci, za které jsi vděčný, každý den.
-              </li>
-              <li>
-                <strong>Uvolňovací techniky</strong> – hudba, malování, zahradničení, modlitba – cokoliv, co ti pomáhá „vypnout
-                hlavu".
-              </li>
-              <li>
-                <strong>Sdílení příběhu</strong> – mluvení o svých zkušenostech (s přáteli, terapeutem, komunitou) snižuje
-                pocit izolace.
-              </li>
-            </ul>
-          </ToggledContent>
-        </SupportBox>
-        <SupportBox
-          headline='Praktické kroky pro vyrovnání se s těžkými situacemi'
-          description='Těžké životní chvíle mohou přijít nečekaně – nemoc, ztráta blízkého, rozpad vztahu, finanční krize. Není možné se na ně vždy připravit, ale lze se naučit, jak jimi projít bez úplného vyčerpání.'
-          image='/img/support-3.webp'
-        >
-          <div class='flex flex-col gap-2' slot="content">
-            <Note>
-              <strong>Co si odnést</strong>: Vyrovnat se s těžkou situací je proces, ne jednorázové rozhodnutí. Každý
-              malý krok vpřed je vítězství.
-            </Note>
-            <Note>
-              <strong>V akutní krizi:</strong><br />
-              <strong>116 123</strong> (Linka první psychické pomoci)<br />
-              <strong>155 / 112</strong> (v ohrožení života)
-            </Note>
-          </div>
-          <ToggledContent slot='toggle' label='Praktické kroky' id='step3'>
-            <ul>
-              <li>
-                <strong>Přijmi realitu situace</strong> – pojmenování toho, co se stalo, je prvním krokem k uzdravení.
-              </li>
-              <li>
-                <strong>Vyhledej podporu</strong> – rodina, přátelé, terapeut, podpůrné skupiny. Nečekej, až tě přemůže samota.
-              </li>
-              <li>
-                <strong>Vytvoř si nouzový plán</strong> – napiš si seznam nejdůležitějších věcí, které je potřeba vyřešit
-                (úřady, finance, péče o děti).
-              </li>
-              <li>
-                <strong>Dbej na základní potřeby</strong> – spánek, jídlo, pitný režim, pohyb. Tělo i mysl potřebují energii
-                k zotavení.
-              </li>
-              <li>
-                <strong>Rozděl si cíle na malé kroky</strong> – místo „vyřeším všechno" si dej „dnes udělám jednu konkrétní
-                věc".
-              </li>
-              <li>
-                <strong>Buď k sobě laskavý</strong> – nehledej dokonalost, dovol si i dny, kdy nezvládneš nic navíc.
-              </li>
-            </ul>
-          </ToggledContent>
-        </SupportBox>
-      </div>
     </Content>
     <Content bg='white'>
       <H2>Co čtenáři říkají o knize</H2>

@@ -1,0 +1,30 @@
+---
+import { getCollection, render } from 'astro:content'
+import H1 from '../../../components/ui/H1.astro'
+import Layout from '../../../layouts/Layout.astro'
+import Backlink from '../../../components/Backlink.astro'
+import Content from '../../../components/ui/Content.astro'
+
+export async function getStaticPaths() {
+  const statPosts = await getCollection('statistics')
+
+  return statPosts.map((post) => ({
+    params: { id: post.data.slug },
+    props: { post },
+  }))
+}
+
+const { post } = Astro.props
+const { Content: RenderedContent } = await render(post)
+---
+
+<Layout>
+  <main>
+    <Content bg='light'>
+      <H1 class='text-3xl'>{post.data.title}</H1>
+      <div class='md-content pb-16 md-content post'>
+        <RenderedContent />
+      </div>
+    </Content>
+  </main>
+</Layout>

@@ -16,6 +16,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
     min-height: 100vh;
+    background: #FDF8F0;
 }
 
 .head-button {
@@ -48,6 +49,10 @@
         grid-template-columns: 1fr;
         gap: 10px;
     }
+}
+
+.child-list li {
+    @apply text-sm;
 }
 
 .toggle-content[data-visible='true'] div[data-content] {
@@ -150,4 +155,62 @@
 
 .md-content table th {
     @apply border-b border-b-dark/10;
+}
+
+.md-content ul {
+    list-style: disc;
+    margin-left: 20px;
+    @apply text-content-text text-sm mb-4;
+}
+
+.md-content.post p,li {
+    @apply text-base;
+}
+
+.md-content.post ol>li {
+    @apply bg-transparent p-0 pl-2 shadow-none border-none ml-8 text-content-text relative;
+}
+
+.md-content.post ol>li:before {
+    content: counter(li-count);
+    @apply absolute top-[-4px] left-[-36px] w-[32px] h-[32px] bg-ico text-dark rounded-full flex justify-center items-center;
+}
+
+.md-content.post ol>li>h3:before {
+    content: "";
+    @apply hidden;
+}
+
+.md-content.post ol>li>h3 {
+    @apply mb-1;
+}
+
+.md-content.post ol {
+    list-style: none;
+}
+
+
+.md-content.post ol,ul {
+    @apply mb-2;
+}
+
+
+/* Mobile menu */
+dialog.mobile-menu:modal {
+    max-width: 100vw;
+    width: 100%;
+    max-height: 100dvh;
+}
+
+dialog.mobile-menu[open] {
+    animation: showMenu 0.2s ease-out;
+}
+
+@keyframes showMenu{
+    0%{
+        max-height:80px;
+    }
+    100%{
+        max-height: 100%;
+    }
 }

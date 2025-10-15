@@ -23,7 +23,6 @@ const { Content: RenderedContent } = await render(step)
 <Layout>
   <main>
     <Content bg='light'>
-      <Backlink />
       <H1 class='text-3xl'>{step.data.title}</H1>
       <div class='md-content pb-16 md-content'>
         <RenderedContent />
