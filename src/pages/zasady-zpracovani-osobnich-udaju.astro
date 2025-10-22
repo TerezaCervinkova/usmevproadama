@@ -1,0 +1,18 @@
+---
+
+import H1 from '../components/ui/H1.astro'
+import Layout from '../layouts/Layout.astro'
+import Content from '../components/ui/Content.astro'
+import { Content as RenderedContent } from '../content/zasady-zpracovani-osobnich-udaju.md';
+---
+
+
+<Layout>
+  <main>
+    <Content bg='light'>
+      <div class='md-content pb-16 md-content post'>
+        <RenderedContent />
+      </div>
+    </Content>
+  </main>
+</Layout>

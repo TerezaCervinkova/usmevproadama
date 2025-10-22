@@ -163,6 +163,10 @@
     @apply text-content-text text-sm mb-4;
 }
 
+.md-content h1 {
+    @apply text-3xl text-dark font-bold mb-8 text-center;
+}
+
 .md-content.post p,li {
     @apply text-base;
 }
