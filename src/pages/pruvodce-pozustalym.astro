@@ -24,9 +24,6 @@ const steps = await getCollection('steps')
       <Text class="mb-8">Ten vznikl jako pomoc lidem v těžkých životních situacích spojených se ztrátou blízké osoby.</Text>
       <div class='grid grid-cols-1 md:grid-cols-3 gap-4'>
         {steps.sort((a, b) => a.data.order - b.data.order).map((step) => <Step step={step.data} />)}
-        <div class="flex items-center p-6 justify-center">
-          <img src="/img/logo_pruvodce_pozustalym.svg" alt="" class="max-w-full" />
-        </div>
       </div>
     </Content>
     <Content bg='light'>
