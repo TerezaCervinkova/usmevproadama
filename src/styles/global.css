@@ -198,6 +198,10 @@
     @apply mb-2;
 }
 
+.md-content .post h3 {
+    @apply text-dark;
+}
+
 
 /* Mobile menu */
 dialog.mobile-menu:modal {

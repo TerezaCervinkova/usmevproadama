@@ -1,0 +1,14 @@
+---
+import Post from './Post.astro'
+import type { PostType } from '../../schema/post.schema.ts'
+interface Props {
+  baseUrl: string
+  posts: PostType[]
+}
+
+const { posts, baseUrl } = Astro.props
+---
+
+<div class='grid grid-cols-1 gap-4'>
+  {posts.sort((a, b) => a.order - b.order).map((post) => <Post baseUrl={baseUrl} post={post} />)}
+</div>

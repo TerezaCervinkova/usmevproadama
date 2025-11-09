@@ -9,24 +9,32 @@ import Note from '../components/ui/Note.astro'
 import ToggledContent from '../components/ToggledContent.astro'
 import { getCollection } from 'astro:content'
 import H1 from '../components/ui/H1.astro'
+import PostsList from '../components/ui/PostsList.astro'
 const steps = await getCollection('steps')
+const posts = await getCollection('guidePosts')
 ---
 
 <Layout>
   <main>
     <Content bg='white'>
-      <img class="w-[200px] m-auto mb-8" src="/img/logo_pruvodce_pozustalym.svg" alt="" />
-      <H1 class="text-center">Kroky po úmrtí blízkého</H1>
+      <img class='w-[200px] m-auto mb-8' src='/img/logo_pruvodce_pozustalym.svg' alt='' />
+      <H1 class='text-center'>Kroky po úmrtí blízkého</H1>
       <Text class='mb-1'>
         Tato kniha nabízí nejen příběh, ale také konkrétní rady a praktické tipy pro lidi, kteří čelí ztrátě blízkého.
       </Text>
-      <Text class="mb-1"><strong>Kniha i praktické rady jsou součástí mého projektu Průvodce pozůstalým</strong></Text>
-      <Text class="mb-8">Ten vznikl jako pomoc lidem v těžkých životních situacích spojených se ztrátou blízké osoby.</Text>
+      <Text class='mb-1'><strong>Kniha i praktické rady jsou součástí mého projektu Průvodce pozůstalým</strong></Text>
+      <Text class='mb-8'
+        >Ten vznikl jako pomoc lidem v těžkých životních situacích spojených se ztrátou blízké osoby.</Text
+      >
       <div class='grid grid-cols-1 md:grid-cols-3 gap-4'>
         {steps.sort((a, b) => a.data.order - b.data.order).map((step) => <Step step={step.data} />)}
       </div>
     </Content>
     <Content bg='light'>
+      <H2>Nejste na to sami</H2>
+      <PostsList baseUrl='/pruvodce-pozustalym/clanek' posts={posts.map((post) => post.data)} />
+    </Content>
+    <Content bg='white'>
       <H2>Podpora v těžkých chvílích</H2>
       <Text class='pb-4'>
         Praktické nástroje a techniky pro zvládání stresu, hledání vnitřní síly a postupné vyrovnávání se s těžkými
@@ -38,7 +46,7 @@ const steps = await getCollection('steps')
           description="Sebereflexe a zvládání stresu jsou klíčové dovednosti pro každého, kdo prochází náročným obdobím. Umožňují nám zastavit se, podívat se na situaci s odstupem a zvolit cestu, která nás posune dál. Nejde o to být „pořád v pohodě', ale naučit se rozpoznat, co se v nás děje, a vědomě s tím pracovat."
           image='/img/support-1.webp'
         >
-          <div class='flex flex-col gap-2' slot="content">
+          <div class='flex flex-col gap-2' slot='content'>
             <Note>
               <strong>Co si odnést</strong>: Sebereflexe není o hledání chyb, ale o nacházení cesty k sobě. Čím víc ji
               trénuješ, tím snáz zvládáš stres a těžké chvíle.
@@ -75,11 +83,11 @@ const steps = await getCollection('steps')
           </ToggledContent>
         </SupportBox>
         <SupportBox
-          headline='Metody sebereflexe a zvládání stresu'
+          headline='Techniky, jak zůstat silný v těžkých chvílích'
           description="Síla není o tom neplakat nebo „držet se' za každou cenu. Skutečná síla spočívá v tom, že umíš uznat své emoce a přesto najdeš způsob, jak pokračovat dál."
           image='/img/support-2.webp'
         >
-          <div class='flex flex-col gap-2' slot="content">
+          <div class='flex flex-col gap-2' slot='content'>
             <Note>
               <strong>Co si odnést</strong>: Zůstat silný neznamená necítit bolest. Znamená to umět jít dál, i když ji
               cítíš.
@@ -116,7 +124,7 @@ const steps = await getCollection('steps')
           description='Těžké životní chvíle mohou přijít nečekaně – nemoc, ztráta blízkého, rozpad vztahu, finanční krize. Není možné se na ně vždy připravit, ale lze se naučit, jak jimi projít bez úplného vyčerpání.'
           image='/img/support-3.webp'
         >
-          <div class='flex flex-col gap-2' slot="content">
+          <div class='flex flex-col gap-2' slot='content'>
             <Note>
               <strong>Co si odnést</strong>: Vyrovnat se s těžkou situací je proces, ne jednorázové rozhodnutí. Každý
               malý krok vpřed je vítězství.

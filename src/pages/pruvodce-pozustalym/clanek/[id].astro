@@ -3,7 +3,7 @@ import { getCollection, render } from 'astro:content'
 import PostPage from '../../../components/ui/PostPage.astro'
 
 export async function getStaticPaths() {
-  const guidePosts = await getCollection('childPosts')
+  const guidePosts = await getCollection('guidePosts')
 
   return guidePosts.map((post) => ({
     params: { id: post.data.slug },
@@ -18,3 +18,5 @@ const { Content: RenderedContent } = await render(post)
 <PostPage title={post.data.title}>
   <RenderedContent />
 </PostPage>
+
+---

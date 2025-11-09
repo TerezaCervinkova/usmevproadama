@@ -1,7 +1,7 @@
 import { defineCollection } from "astro:content";
 import { glob } from "astro/loaders";
 import { stepSchema } from "./schema/step.schema.ts";
-import { guidePostSchema } from "./schema/guidePost.schema.ts";
+import { postSchema } from "./schema/post.schema.ts";
 import { statisticsSchema } from "./schema/statistics.schema.ts";
 
 const steps = defineCollection({
@@ -12,24 +12,28 @@ const steps = defineCollection({
   schema: stepSchema,
 });
 
+const childPosts = defineCollection({
+  loader: glob({
+    pattern: ["*.md"],
+    base: "src/content/child/posts",
+  }),
+  schema: postSchema,
+});
+
+const statistics = defineCollection({
+  loader: glob({
+    pattern: ["*.md"],
+    base: "src/content/child/statistics",
+  }),
+  schema: statisticsSchema,
+});
+
 const guidePosts = defineCollection({
   loader: glob({
     pattern: ["*.md"],
     base: "src/content/guide/posts",
   }),
-  schema: guidePostSchema,
+  schema: postSchema,
 });
 
-
-const statistics = defineCollection({
-  loader: glob({
-    pattern: ["*.md"],
-    base: "src/content/guide/statistics",
-  }),
-  schema: statisticsSchema,
-});
-
-
-
-
-export const collections = { steps, guidePosts, statistics };
+export const collections = { steps, childPosts, statistics, guidePosts };

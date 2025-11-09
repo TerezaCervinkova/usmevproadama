@@ -1,0 +1,23 @@
+---
+import LinkButton from './LinkButton.astro'
+import H3 from './H3.astro'
+import Text from './Text.astro'
+import type { PostType } from '../../schema/post.schema.ts'
+
+interface Props {
+  baseUrl: string
+  post: PostType
+}
+
+const { post, baseUrl } = Astro.props
+---
+
+<div class='grid grid-cols-1 md:grid-cols-[1fr_auto] gap-4 border-b-2 border-b-primary last:border-b-0 pb-8 md:pb-0'>
+  <div>
+    <H3 class='text-left mt-0'>{post.title}</H3>
+    <Text class='text-left'>{post.preview}</Text>
+  </div>
+  <div class='md:self-center w-full'>
+    <LinkButton href={`${baseUrl}/${post.slug}`} theme='primary' class='w-full inline-block'>Přečíst</LinkButton>
+  </div>
+</div>
