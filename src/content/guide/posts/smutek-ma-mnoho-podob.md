@@ -94,4 +94,5 @@ Smutek, vztek, vinu, vděčnost, prázdno, úlevu…
 Každý z těch pocitů má své místo. Každý z nich je **důkazem lásky.**
 
 ## Pokud máš pocit, že je toho na tebe příliš, je naprosto v pořádku požádat o pomoc.
-Rozhovor s psychologem, podpůrná skupina nebo jen přítel,
+Rozhovor s psychologem, podpůrná skupina nebo jen přítel, který umí naslouchat, mohou
+být tím, co ti pomůže dýchat o trochu lehčeji.
