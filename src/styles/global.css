@@ -89,6 +89,10 @@
     margin-left: 15px;
 }
 
+.support-box p,li,strong, ul>li {
+    @apply text-sm ;
+}
+
 /*    ------------------------------------- */
 .md-content h2 {
     @apply text-lg mt-6 mb-4 text-secondary;
