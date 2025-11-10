@@ -89,7 +89,10 @@
     margin-left: 15px;
 }
 
-.support-box p,li,strong, ul>li {
+.toggle-content p,
+.toggle-content li,
+.toggle-content strong,
+.toggle-content ul>li {
     @apply text-sm ;
 }
 
