@@ -2,31 +2,38 @@
 import '../styles/global.css'
 import Content from '../components/ui/Content.astro'
 import Navigation from '../components/Navigation.astro'
+import CookieConsent from '../components/cookie-consent/CookieConsent.astro'
 ---
 
 <!doctype html>
 <html lang='en'>
   <head>
-    
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5FX5X5SK');</script>
-<!-- End Google Tag Manager -->
+    <script>
+      ;(function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : ''
+        j.async = true
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, 'script', 'dataLayer', 'GTM-5FX5X5SK')
+    </script>
+    <!-- End Google Tag Manager -->
 
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width' />
-    <meta name="description" content="Průvodce pozůstalým. Praktická podpora v nejtěžších chvílích." />
-    <meta name="author" content="Adriana Málková" />
-    <meta name="keywords" content="Úsměv pro Adama, kniha, průvodce, pozůstalí, smrt, ztráta, pomoc, podpora" />
-    <meta property="og:title" content="Úsměv pro Adama" />
-    <meta property="og:description" content="Průvodce pozůstalým. Praktická podpora v nejtěžších chvílích." />
-    <meta property="og:image" content="/img/about.webp" />
-    <meta property="og:url" content="https://usmevproadama.cz" />
-    <meta property="og:site_name" content="www.usmevproadama.cz">
-    <meta property="og:type" content="website" />
+    <meta name='description' content='Průvodce pozůstalým. Praktická podpora v nejtěžších chvílích.' />
+    <meta name='author' content='Adriana Málková' />
+    <meta name='keywords' content='Úsměv pro Adama, kniha, průvodce, pozůstalí, smrt, ztráta, pomoc, podpora' />
+    <meta property='og:title' content='Úsměv pro Adama' />
+    <meta property='og:description' content='Průvodce pozůstalým. Praktická podpora v nejtěžších chvílích.' />
+    <meta property='og:image' content='/img/about.webp' />
+    <meta property='og:url' content='https://usmevproadama.cz' />
+    <meta property='og:site_name' content='www.usmevproadama.cz' />
+    <meta property='og:type' content='website' />
     <link rel='icon' type='image/x-icon' href='/favicon.ico' />
     <meta name='generator' content={Astro.generator} />
     <link rel='preconnect' href='https://fonts.googleapis.com' />
@@ -43,11 +50,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </style>
   </head>
   <body>
-    
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FX5X5SK"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src='https://www.googletagmanager.com/ns.html?id=GTM-5FX5X5SK'
+        height='0'
+        width='0'
+        style='display:none;visibility:hidden'></iframe></noscript
+    >
+    <!-- End Google Tag Manager (noscript) -->
 
     <div class='layout'>
       <Navigation />
@@ -58,9 +69,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p class='text-tertiary pb-6 border-b border-[#A25D32]'>
             Příběh naděje, síly a pomoci. Kniha zdarma díky podpoře Nadace EP Group.
           </p>
-          <div class="mt-4 text-[#E8BE94] hover:underline">
+          <div class='mt-4 text-[#E8BE94] hover:underline'>
             <ul>
-              <li><a class="text-sm" href="/zasady-zpracovani-osobnich-udaju">Zásady zpracování osobních údajů</a></li>
+              <li><a class='text-sm' href='/zasady-zpracovani-osobnich-udaju'>Zásady zpracování osobních údajů</a></li>
             </ul>
           </div>
           <p class='text-sm pt-4 text-[#E8BE94]'>
@@ -68,6 +79,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </p>
         </Content>
       </footer>
+      <CookieConsent />
     </div>
   </body>
 </html>
